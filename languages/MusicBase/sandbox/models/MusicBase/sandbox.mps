@@ -38,7 +38,7 @@
     </node>
     <node concept="3C4BRV" id="4pw9jmItYBr" role="3C5ZkU">
       <property role="3C4MJ4" value="87" />
-      <property role="3C4MJ6" value="2000" />
+      <property role="3C4MJ6" value="1000" />
     </node>
     <node concept="3C4BRV" id="4pw9jmIAns6" role="3C5ZkU">
       <property role="3C4MJ4" value="92" />
