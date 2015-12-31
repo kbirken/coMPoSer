@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="14,0,30,0" name="MusicBase.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:7752cbf8-a05a-46e1-bc22-681a922ea789(MusicBase.generator.template.main@generator)/5071094092909814413">
+    <file name="QueriesGenerated.java">
+      <node id="5071094092909983580" at="17,112,18,540" concept="0" />
+      <node id="5071094092910030521" at="20,112,21,190" concept="0" />
+      <node id="5071094092909818300" at="23,112,24,186" concept="0" />
+      <node id="5071094092909975345" at="26,120,27,191" concept="0" />
+      <scope id="5071094092909982221" at="17,112,18,540" />
+      <scope id="5071094092910030515" at="20,112,21,190" />
+      <scope id="5071094092909818294" at="23,112,24,186" />
+      <scope id="5071094092909975339" at="26,120,27,191" />
+    </file>
+  </root>
+</debug-info>
+

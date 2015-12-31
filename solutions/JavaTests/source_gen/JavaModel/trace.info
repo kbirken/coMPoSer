@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <root nodeRef="r:84ed7a27-472d-4454-9586-c5c53166ebfa(JavaModel)/5071094092911236225">
+    <file name="Test1.java">
+      <node id="5071094092911236401" at="11,42,12,39" concept="0" />
+      <node id="5071094092911489871" at="12,39,13,0" concept="3" />
+      <node id="5071094092911498527" at="13,0,14,29" concept="2" />
+      <node id="5071094092911499643" at="15,9,16,42" concept="0" />
+      <node id="5071094092911491290" at="16,42,17,19" concept="0" />
+      <node id="5071094092911507899" at="17,19,18,0" concept="3" />
+      <node id="5071094092911492113" at="20,5,21,31" concept="2" />
+      <node id="5071094092911513459" at="22,24,23,39" concept="0" />
+      <node id="5071094092911493711" at="23,39,24,30" concept="0" />
+      <node id="5071094092911521605" at="24,30,25,30" concept="0" />
+      <node id="5071094092911490770" at="26,5,27,0" concept="3" />
+      <node id="5071094092911238368" at="28,9,29,25" concept="0" />
+      <node id="5071094092911520548" at="31,5,32,0" concept="3" />
+      <node id="5071094092911495221" at="33,26,34,26" concept="0" />
+      <node id="5071094092911495979" at="35,5,36,0" concept="3" />
+      <node id="5071094092911240288" at="36,0,37,33" concept="0" />
+      <node id="5071094092911518410" at="32,0,35,5" concept="1" />
+      <node id="5071094092911238636" at="27,0,31,5" concept="5" />
+      <node id="5071094092911509099" at="21,31,26,5" concept="1" />
+      <node id="5071094092911497535" at="14,29,20,5" concept="5" />
+      <node id="5071094092911236268" at="11,0,39,0" concept="4" trace="main#([Ljava/lang/String;)V" />
+      <scope id="5071094092911497531" at="19,0,19,42">
+        <var name="e" id="5071094092911497533" />
+      </scope>
+      <scope id="5071094092911497532" at="19,42,19,42" />
+      <scope id="5071094092911238632" at="30,0,30,38">
+        <var name="e" id="5071094092911238634" />
+      </scope>
+      <scope id="5071094092911238633" at="30,38,30,38" />
+      <scope id="5071094092911238637" at="28,9,29,25" />
+      <scope id="5071094092911518412" at="33,26,34,26" />
+      <scope id="5071094092911497536" at="15,9,18,0" />
+      <scope id="5071094092911509101" at="22,24,25,30" />
+      <scope id="5071094092911236274" at="11,42,37,33">
+        <var name="channel" id="5071094092911492114" />
+        <var name="synth" id="5071094092911498528" />
+      </scope>
+      <scope id="5071094092911236268" at="11,0,39,0">
+        <var name="args" id="5071094092911236269" />
+      </scope>
+      <unit id="5071094092911236225" at="10,0,40,0" name="JavaModel.Test1" />
+    </file>
+  </root>
+</debug-info>
+

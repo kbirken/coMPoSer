@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <root nodeRef="r:5aa76071-6cb2-4d6a-aa26-4a9285956732(MusicBase.runtime)/5071094092911527331">
+    <file name="MidiPlayerBase.java">
+      <node id="5071094092911528809" at="11,0,12,0" concept="1" trace="synth" />
+      <node id="5071094092911529980" at="12,0,13,0" concept="1" trace="channel" />
+      <node id="5071094092911933873" at="13,0,14,0" concept="1" trace="verbose" />
+      <node id="5071094092911935316" at="15,40,16,27" concept="0" />
+      <node id="5071094092911812849" at="16,27,17,42" concept="0" />
+      <node id="5071094092911528924" at="18,9,19,42" concept="0" />
+      <node id="5071094092911529352" at="19,42,20,19" concept="0" />
+      <node id="5071094092911530140" at="20,19,21,0" concept="5" />
+      <node id="5071094092911530292" at="21,0,22,39" concept="0" />
+      <node id="5071094092911531551" at="23,42,24,26" concept="0" />
+      <node id="5071094092911531952" at="24,26,25,19" concept="4" />
+      <node id="5071094092911532455" at="26,5,27,0" concept="5" />
+      <node id="5071094092911532802" at="27,0,28,16" concept="4" />
+      <node id="5071094092911643068" at="31,18,32,58" concept="0" />
+      <node id="5071094092911534864" at="33,5,34,29" concept="0" />
+      <node id="5071094092911919621" at="37,18,38,59" concept="0" />
+      <node id="5071094092911536341" at="39,5,40,25" concept="0" />
+      <node id="5071094092911937829" at="30,31,33,5" concept="2" />
+      <node id="5071094092911940034" at="36,32,39,5" concept="2" />
+      <node id="5071094092911534061" at="30,0,36,0" concept="3" trace="noteOn#(I)V" />
+      <node id="5071094092911535848" at="36,0,42,0" concept="3" trace="noteOff#(I)V" />
+      <node id="5071094092911529188" at="17,42,26,5" concept="6" />
+      <node id="5071094092911528896" at="15,0,30,0" concept="3" trace="init#(Z)Z" />
+      <scope id="5071094092911937831" at="31,18,32,58" />
+      <scope id="5071094092911940036" at="37,18,38,59" />
+      <scope id="5071094092911529184" at="23,0,25,19">
+        <var name="e" id="5071094092911529186" />
+      </scope>
+      <scope id="5071094092911529185" at="23,42,25,19" />
+      <scope id="5071094092911529189" at="18,9,22,39" />
+      <scope id="5071094092911534064" at="30,31,34,29" />
+      <scope id="5071094092911535851" at="36,32,40,25" />
+      <scope id="5071094092911534061" at="30,0,36,0">
+        <var name="key" id="5071094092911534302" />
+      </scope>
+      <scope id="5071094092911535848" at="36,0,42,0">
+        <var name="key" id="5071094092911536124" />
+      </scope>
+      <scope id="5071094092911528899" at="15,40,28,16" />
+      <scope id="5071094092911528896" at="15,0,30,0">
+        <var name="verbose" id="5071094092911934299" />
+      </scope>
+      <unit id="5071094092911527331" at="10,0,43,0" name="MusicBase.runtime.MidiPlayerBase" />
+    </file>
+  </root>
+</debug-info>
+
