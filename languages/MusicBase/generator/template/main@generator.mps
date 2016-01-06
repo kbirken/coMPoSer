@@ -13,8 +13,8 @@
   <imports>
     <import index="70zf" ref="r:5aa76071-6cb2-4d6a-aa26-4a9285956732(MusicBase.runtime)" />
     <import index="lom3" ref="r:2c1687dc-3d5e-41c6-abc7-78839b701c42(MusicBase.structure)" />
+    <import index="4nke" ref="r:c4b3bded-e0d6-4c0b-806c-5c25909bd08d(MusicBase.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="4nke" ref="r:c4b3bded-e0d6-4c0b-806c-5c25909bd08d(MusicBase.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="3938613f-5bdd-4d70-b4ba-479d5eebaf03" name="Midi">
@@ -159,6 +159,12 @@
       <ref role="30HIoZ" to="lom3:4pw9jmIs_ze" resolve="Note" />
       <node concept="j$656" id="5Su2du4QYjA" role="1lVwrX">
         <ref role="v9R2y" node="5Su2du4QYj$" resolve="reduce_Note" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="5Su2du4YOfG" role="3acgRq">
+      <ref role="30HIoZ" to="lom3:5Su2du4YBqX" resolve="Rest" />
+      <node concept="j$656" id="5Su2du4YOhF" role="1lVwrX">
+        <ref role="v9R2y" node="5Su2du4YOhD" resolve="reduce_Rest" />
       </node>
     </node>
     <node concept="3lhOvk" id="4pw9jmIu9ul" role="3lj3bC">
@@ -409,6 +415,32 @@
                     <ref role="3TtcxE" to="lom3:4pw9jmIAw9l" />
                   </node>
                   <node concept="30H73N" id="5Su2du4Wbz0" role="2Oq$k0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="5Su2du4YOhD">
+    <property role="TrG5h" value="reduce_Rest" />
+    <ref role="3gUMe" to="lom3:5Su2du4YBqX" resolve="Rest" />
+    <node concept="3CYEW_" id="5Su2du4YOIU" role="13RCb5">
+      <property role="TrG5h" value="Rest" />
+      <node concept="raruj" id="5Su2du4YOJt" role="lGtFl" />
+      <node concept="17Uvod" id="5Su2du4YOJu" role="lGtFl">
+        <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+        <property role="2qtEX9" value="name" />
+        <node concept="3zFVjK" id="5Su2du4YOJv" role="3zH0cK">
+          <node concept="3clFbS" id="5Su2du4YOJw" role="2VODD2">
+            <node concept="3clFbF" id="5Su2du4YOJx" role="3cqZAp">
+              <node concept="2OqwBi" id="5Su2du4YOJy" role="3clFbG">
+                <node concept="1iwH7S" id="5Su2du4YOJz" role="2Oq$k0" />
+                <node concept="2piZGk" id="5Su2du4YOJ$" role="2OqNvi">
+                  <node concept="Xl_RD" id="5Su2du4YOJ_" role="2piZGb">
+                    <property role="Xl_RC" value="Note" />
+                  </node>
                 </node>
               </node>
             </node>

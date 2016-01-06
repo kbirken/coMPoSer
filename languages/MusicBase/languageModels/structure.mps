@@ -93,6 +93,8 @@
   </node>
   <node concept="1TIwiD" id="4pw9jmIAqgV">
     <property role="TrG5h" value="Sequence" />
+    <property role="34LRSv" value="sequence" />
+    <property role="R4oN_" value="a sequence of musical entities" />
     <ref role="1TJDcQ" node="4pw9jmIAqe6" resolve="Playable" />
     <node concept="1TJgyj" id="4pw9jmIAqhn" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -110,6 +112,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4pw9jmIAqe6" resolve="Playable" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5Su2du4YBqX">
+    <property role="TrG5h" value="Rest" />
+    <property role="34LRSv" value="rest" />
+    <ref role="1TJDcQ" node="4pw9jmIAqeG" resolve="Sound" />
   </node>
 </model>
 
