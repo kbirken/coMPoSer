@@ -9,6 +9,7 @@
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="true">45bffef4-dd20-400c-b21b-494af6adf5ac(MusicBase.runtime)</dependency>
+    <dependency reexport="false">ba40c94e-9586-4287-a102-9797dcf5f3db(Midi.runtime)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>b4c83bfc-bf22-4ef3-9539-3d39b490a670(MusicBase)</usedLanguage>

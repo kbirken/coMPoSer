@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="MusicBase" uuid="b4c83bfc-bf22-4ef3-9539-3d39b490a670" version="0">
+<language namespace="Midi" uuid="3938613f-5bdd-4d70-b4ba-479d5eebaf03" version="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="MusicBase#5071094092909364598" uuid="fead8203-e62d-40f0-8f88-5867607c1f9a">
+    <generator name="" generatorUID="Midi#5071094092912035972" uuid="bb95b23d-84c7-45e4-9fbb-3fa3fd3c39a6">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -15,23 +15,20 @@
       </models>
       <external-templates />
       <dependencies>
-        <dependency reexport="true">b4c83bfc-bf22-4ef3-9539-3d39b490a670(MusicBase)</dependency>
-        <dependency reexport="true">3938613f-5bdd-4d70-b4ba-479d5eebaf03(Midi)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="true">3938613f-5bdd-4d70-b4ba-479d5eebaf03(Midi)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
-        <usedLanguage>b4c83bfc-bf22-4ef3-9539-3d39b490a670(MusicBase)</usedLanguage>
-        <usedLanguage>f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)</usedLanguage>
         <usedLanguage>3938613f-5bdd-4d70-b4ba-479d5eebaf03(Midi)</usedLanguage>
+        <usedLanguage>f2801650-65d5-424e-bb1b-463a8781b786(jetbrains.mps.baseLanguage.javadoc)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
-        <language id="3938613f-5bdd-4d70-b4ba-479d5eebaf03" fqName="Midi" version="0" />
-        <language id="b4c83bfc-bf22-4ef3-9539-3d39b490a670" fqName="MusicBase" version="-1" />
+        <language id="3938613f-5bdd-4d70-b4ba-479d5eebaf03" fqName="Midi" version="-1" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -52,9 +49,9 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">45bffef4-dd20-400c-b21b-494af6adf5ac(MusicBase.runtime)</dependency>
-    <dependency reexport="false" scope="generate-into">3938613f-5bdd-4d70-b4ba-479d5eebaf03(Midi)</dependency>
-    <dependency reexport="false">b4c83bfc-bf22-4ef3-9539-3d39b490a670(MusicBase)</dependency>
+    <dependency reexport="true">ba40c94e-9586-4287-a102-9797dcf5f3db(Midi.runtime)</dependency>
+    <dependency reexport="false">3938613f-5bdd-4d70-b4ba-479d5eebaf03(Midi)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>73c1a490-99fa-4d0d-8292-b8985697c74b(jetbrains.mps.execution.common)</usedLanguage>
@@ -96,7 +93,7 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
   <runtime>
-    <dependency reexport="false">45bffef4-dd20-400c-b21b-494af6adf5ac(MusicBase.runtime)</dependency>
+    <dependency reexport="false">ba40c94e-9586-4287-a102-9797dcf5f3db(Midi.runtime)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</extendedLanguage>

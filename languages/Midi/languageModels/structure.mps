@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2c1687dc-3d5e-41c6-abc7-78839b701c42(MusicBase.structure)">
+<model ref="r:726e8c78-944b-4e4c-a772-b49120258764(Midi.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
@@ -15,7 +15,6 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
-        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -43,73 +42,62 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="4pw9jmIs_ze">
-    <property role="TrG5h" value="Note" />
-    <property role="34LRSv" value="note" />
-    <property role="R4oN_" value="musical note" />
-    <ref role="1TJDcQ" node="4pw9jmIAqeG" resolve="Sound" />
-    <node concept="1TJgyi" id="4pw9jmIsKVL" role="1TKVEl">
+  <node concept="1TIwiD" id="4pw9jmIACCg">
+    <property role="TrG5h" value="MidiSequence" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="a sequence of MIDI events" />
+    <ref role="1TJDcQ" node="5Su2du4SCCI" resolve="MidiPlayable" />
+    <node concept="1TJgyj" id="4pw9jmIACDw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="events" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5Su2du4SCCI" resolve="MidiPlayable" />
+    </node>
+    <node concept="PrWs8" id="4pw9jmIAEn4" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="4pw9jmIAD_P" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4pw9jmIACD4">
+    <property role="TrG5h" value="MidiEvent" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="the abstract base class for all MIDI events" />
+    <ref role="1TJDcQ" node="5Su2du4SCCI" resolve="MidiPlayable" />
+    <node concept="1TJgyi" id="4pw9jmIACDy" role="1TKVEl">
+      <property role="TrG5h" value="time" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4pw9jmIACDW">
+    <property role="TrG5h" value="NoteEvent" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="4pw9jmIACD4" resolve="MidiEvent" />
+    <node concept="1TJgyi" id="4pw9jmIACEo" role="1TKVEl">
       <property role="TrG5h" value="key" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4pw9jmItX0e">
-    <property role="TrG5h" value="Song" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4pw9jmItYBx" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="4pw9jmI_xlJ" role="PzmwI">
-      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
-    </node>
-    <node concept="1TJgyi" id="4pw9jmI_PL6" role="1TKVEl">
-      <property role="TrG5h" value="transpose" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyj" id="4pw9jmIAw6v" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="playable" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4pw9jmIAqe6" resolve="Playable" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4pw9jmIAqe6">
-    <property role="TrG5h" value="Playable" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="4pw9jmIAqeG">
-    <property role="TrG5h" value="Sound" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="R4oN_" value="abstract base class for all sounds" />
-    <ref role="1TJDcQ" node="4pw9jmIAqe6" resolve="Playable" />
-    <node concept="1TJgyi" id="4pw9jmIAqf8" role="1TKVEl">
-      <property role="TrG5h" value="duration" />
+  <node concept="1TIwiD" id="4pw9jmIACFa">
+    <property role="TrG5h" value="NoteOnEvent" />
+    <ref role="1TJDcQ" node="4pw9jmIACDW" resolve="NoteEvent" />
+    <node concept="1TJgyi" id="4pw9jmIACFA" role="1TKVEl">
+      <property role="TrG5h" value="velocity" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4pw9jmIAqgV">
-    <property role="TrG5h" value="Sequence" />
-    <ref role="1TJDcQ" node="4pw9jmIAqe6" resolve="Playable" />
-    <node concept="1TJgyj" id="4pw9jmIAqhn" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="items" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4pw9jmIAqe6" resolve="Playable" />
-    </node>
+  <node concept="1TIwiD" id="4pw9jmIACFK">
+    <property role="TrG5h" value="NoteOffEvent" />
+    <ref role="1TJDcQ" node="4pw9jmIACDW" resolve="NoteEvent" />
   </node>
-  <node concept="1TIwiD" id="4pw9jmIAw8T">
-    <property role="TrG5h" value="Multiple" />
-    <ref role="1TJDcQ" node="4pw9jmIAqe6" resolve="Playable" />
-    <node concept="1TJgyj" id="4pw9jmIAw9l" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="items" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4pw9jmIAqe6" resolve="Playable" />
-    </node>
+  <node concept="1TIwiD" id="5Su2du4SCCI">
+    <property role="TrG5h" value="MidiPlayable" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
