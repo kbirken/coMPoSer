@@ -24,6 +24,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
@@ -53,6 +54,9 @@
       <node concept="l2Vlx" id="6oHN6atrzZ4" role="2iSdaV" />
       <node concept="3F0ifn" id="6oHN6atrzZ5" role="3EZMnx">
         <property role="3F0ifm" value="[" />
+        <node concept="11LMrY" id="6oHN6atteh7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F2HdR" id="6oHN6atrzZl" role="3EZMnx">
         <property role="2czwfO" value="," />

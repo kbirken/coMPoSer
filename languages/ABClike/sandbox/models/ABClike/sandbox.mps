@@ -419,7 +419,6 @@
         <property role="3C4MJ4" value="45" />
         <property role="3CYorX" value="1200" />
       </node>
-      <node concept="3VhmBs" id="6oHN6atrFrM" role="3CYo5y" />
     </node>
     <node concept="3CYo4e" id="5Su2du4Zfyk" role="3r7L0C">
       <property role="TrG5h" value="MainThemeB" />
