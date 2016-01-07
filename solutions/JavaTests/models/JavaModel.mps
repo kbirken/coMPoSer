@@ -2,12 +2,12 @@
 <model ref="r:84ed7a27-472d-4454-9586-c5c53166ebfa(JavaModel)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="2" />
   </languages>
   <imports>
-    <import index="smwj" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.sound.midi(JDK/javax.sound.midi@java_stub)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="zcvs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.sound.midi(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -125,11 +125,11 @@
         <node concept="3clFbF" id="4pw9jmIz_kL" role="3cqZAp">
           <node concept="2OqwBi" id="4pw9jmIz_kI" role="3clFbG">
             <node concept="10M0yZ" id="4pw9jmIz_kJ" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="4pw9jmIz_kK" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="4pw9jmIz_m5" role="37wK5m">
                 <property role="Xl_RC" value="Hello World!" />
               </node>
@@ -141,7 +141,7 @@
           <node concept="3cpWsn" id="4pw9jmI$_kw" role="3cpWs9">
             <property role="TrG5h" value="synth" />
             <node concept="3uibUv" id="4pw9jmI$_kx" role="1tU5fm">
-              <ref role="3uigEE" to="smwj:~Synthesizer" resolve="Synthesizer" />
+              <ref role="3uigEE" to="zcvs:~Synthesizer" resolve="Synthesizer" />
             </node>
             <node concept="10Nm6u" id="4pw9jmI$_qa" role="33vP2m" />
           </node>
@@ -151,8 +151,8 @@
             <node concept="3clFbF" id="4pw9jmI$__V" role="3cqZAp">
               <node concept="37vLTI" id="4pw9jmI$__X" role="3clFbG">
                 <node concept="2YIFZM" id="4pw9jmI$zqx" role="37vLTx">
-                  <ref role="37wK5l" to="smwj:~MidiSystem.getSynthesizer():javax.sound.midi.Synthesizer" resolve="getSynthesizer" />
-                  <ref role="1Pybhc" to="smwj:~MidiSystem" resolve="MidiSystem" />
+                  <ref role="37wK5l" to="zcvs:~MidiSystem.getSynthesizer():javax.sound.midi.Synthesizer" resolve="getSynthesizer" />
+                  <ref role="1Pybhc" to="zcvs:~MidiSystem" resolve="MidiSystem" />
                 </node>
                 <node concept="37vLTw" id="4pw9jmI$_Jp" role="37vLTJ">
                   <ref role="3cqZAo" node="4pw9jmI$_kw" resolve="synth" />
@@ -165,7 +165,7 @@
                   <ref role="3cqZAo" node="4pw9jmI$_kw" resolve="synth" />
                 </node>
                 <node concept="liA8E" id="4pw9jmI$zDm" role="2OqNvi">
-                  <ref role="37wK5l" to="smwj:~MidiDevice.open():void" resolve="open" />
+                  <ref role="37wK5l" to="zcvs:~MidiDevice.open():void" resolve="open" />
                 </node>
               </node>
             </node>
@@ -176,7 +176,7 @@
             <node concept="3cpWsn" id="4pw9jmI$_4X" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="4pw9jmI$_4Y" role="1tU5fm">
-                <ref role="3uigEE" to="smwj:~MidiUnavailableException" resolve="MidiUnavailableException" />
+                <ref role="3uigEE" to="zcvs:~MidiUnavailableException" resolve="MidiUnavailableException" />
               </node>
             </node>
           </node>
@@ -185,7 +185,7 @@
           <node concept="3cpWsn" id="4pw9jmI$zKi" role="3cpWs9">
             <property role="TrG5h" value="channel" />
             <node concept="3uibUv" id="4pw9jmI$zKj" role="1tU5fm">
-              <ref role="3uigEE" to="smwj:~MidiChannel" resolve="MidiChannel" />
+              <ref role="3uigEE" to="zcvs:~MidiChannel" resolve="MidiChannel" />
             </node>
             <node concept="10Nm6u" id="4pw9jmI$E2F" role="33vP2m" />
           </node>
@@ -203,7 +203,7 @@
                       <ref role="3cqZAo" node="4pw9jmI$_kw" resolve="synth" />
                     </node>
                     <node concept="liA8E" id="4pw9jmI$CIS" role="2OqNvi">
-                      <ref role="37wK5l" to="smwj:~Synthesizer.getChannels():javax.sound.midi.MidiChannel[]" resolve="getChannels" />
+                      <ref role="37wK5l" to="zcvs:~Synthesizer.getChannels():javax.sound.midi.MidiChannel[]" resolve="getChannels" />
                     </node>
                   </node>
                 </node>
@@ -218,7 +218,7 @@
                   <ref role="3cqZAo" node="4pw9jmI$zKi" resolve="channel" />
                 </node>
                 <node concept="liA8E" id="4pw9jmI$$it" role="2OqNvi">
-                  <ref role="37wK5l" to="smwj:~MidiChannel.noteOn(int,int):void" resolve="noteOn" />
+                  <ref role="37wK5l" to="zcvs:~MidiChannel.noteOn(int,int):void" resolve="noteOn" />
                   <node concept="3cmrfG" id="4pw9jmI$$jB" role="37wK5m">
                     <property role="3cmrfH" value="80" />
                   </node>
@@ -234,7 +234,7 @@
                   <ref role="3cqZAo" node="4pw9jmI$zKi" resolve="channel" />
                 </node>
                 <node concept="liA8E" id="4pw9jmI$EX8" role="2OqNvi">
-                  <ref role="37wK5l" to="smwj:~MidiChannel.noteOn(int,int):void" resolve="noteOn" />
+                  <ref role="37wK5l" to="zcvs:~MidiChannel.noteOn(int,int):void" resolve="noteOn" />
                   <node concept="3cmrfG" id="4pw9jmI$EX9" role="37wK5m">
                     <property role="3cmrfH" value="84" />
                   </node>
@@ -257,8 +257,8 @@
           <node concept="3clFbS" id="4pw9jmIz_RH" role="SfCbr">
             <node concept="3clFbF" id="4pw9jmIz_Nw" role="3cqZAp">
               <node concept="2YIFZM" id="4pw9jmIz_OS" role="3clFbG">
-                <ref role="37wK5l" to="e2lb:~Thread.sleep(long):void" resolve="sleep" />
-                <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
+                <ref role="37wK5l" to="wyt6:~Thread.sleep(long):void" resolve="sleep" />
+                <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
                 <node concept="3cmrfG" id="4pw9jmIz_Q5" role="37wK5m">
                   <property role="3cmrfH" value="1000" />
                 </node>
@@ -270,7 +270,7 @@
             <node concept="3cpWsn" id="4pw9jmIz_RE" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="4pw9jmIz_RF" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~InterruptedException" resolve="InterruptedException" />
+                <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
               </node>
             </node>
           </node>
@@ -284,7 +284,7 @@
                   <ref role="3cqZAo" node="4pw9jmI$zKi" resolve="channel" />
                 </node>
                 <node concept="liA8E" id="4pw9jmI$$EC" role="2OqNvi">
-                  <ref role="37wK5l" to="smwj:~MidiChannel.noteOff(int):void" resolve="noteOff" />
+                  <ref role="37wK5l" to="zcvs:~MidiChannel.noteOff(int):void" resolve="noteOff" />
                   <node concept="3cmrfG" id="4pw9jmI$$FM" role="37wK5m">
                     <property role="3cmrfH" value="80" />
                   </node>
@@ -303,11 +303,11 @@
         <node concept="3clFbF" id="4pw9jmIzAhw" role="3cqZAp">
           <node concept="2OqwBi" id="4pw9jmIzAht" role="3clFbG">
             <node concept="10M0yZ" id="4pw9jmIzAhu" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="4pw9jmIzAhv" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="Xl_RD" id="4pw9jmIzAou" role="37wK5m">
                 <property role="Xl_RC" value="Ready!" />
               </node>

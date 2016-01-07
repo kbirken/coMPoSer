@@ -67,26 +67,5 @@
       <property role="3CYEXn" value="4000" />
     </node>
   </node>
-  <node concept="3CYEW_" id="5Su2du4Xb8n">
-    <property role="TrG5h" value="MathisLied" />
-    <node concept="3CYEZZ" id="5Su2du4Xb8W" role="3CYEXl">
-      <property role="3CYEYH" value="72" />
-      <property role="3CYEZj" value="127" />
-      <property role="3CYEXn" value="0" />
-    </node>
-    <node concept="3CYEZZ" id="5Su2du4Xb91" role="3CYEXl">
-      <property role="3CYEYH" value="77" />
-      <property role="3CYEZj" value="127" />
-      <property role="3CYEXn" value="500" />
-    </node>
-    <node concept="3CYEZ5" id="5Su2du4Xbr9" role="3CYEXl">
-      <property role="3CYEYH" value="72" />
-      <property role="3CYEXn" value="2000" />
-    </node>
-    <node concept="3CYEZ5" id="5Su2du4Xbrj" role="3CYEXl">
-      <property role="3CYEYH" value="77" />
-      <property role="3CYEXn" value="1500" />
-    </node>
-  </node>
 </model>
 

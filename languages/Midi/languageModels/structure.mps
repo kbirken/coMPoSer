@@ -2,12 +2,12 @@
 <model ref="r:726e8c78-944b-4e4c-a772-b49120258764(Midi.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -15,6 +15,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -46,6 +47,7 @@
     <property role="TrG5h" value="MidiSequence" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="a sequence of MIDI events" />
+    <property role="1pbfSe" value="184897723" />
     <ref role="1TJDcQ" node="5Su2du4SCCI" resolve="MidiPlayable" />
     <node concept="1TJgyj" id="4pw9jmIACDw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -65,6 +67,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="R4oN_" value="the abstract base class for all MIDI events" />
+    <property role="1pbfSe" value="184897671" />
     <ref role="1TJDcQ" node="5Su2du4SCCI" resolve="MidiPlayable" />
     <node concept="1TJgyi" id="4pw9jmIACDy" role="1TKVEl">
       <property role="TrG5h" value="time" />
@@ -75,6 +78,7 @@
     <property role="TrG5h" value="NoteEvent" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="184897615" />
     <ref role="1TJDcQ" node="4pw9jmIACD4" resolve="MidiEvent" />
     <node concept="1TJgyi" id="4pw9jmIACEo" role="1TKVEl">
       <property role="TrG5h" value="key" />
@@ -83,6 +87,7 @@
   </node>
   <node concept="1TIwiD" id="4pw9jmIACFa">
     <property role="TrG5h" value="NoteOnEvent" />
+    <property role="1pbfSe" value="184897537" />
     <ref role="1TJDcQ" node="4pw9jmIACDW" resolve="NoteEvent" />
     <node concept="1TJgyi" id="4pw9jmIACFA" role="1TKVEl">
       <property role="TrG5h" value="velocity" />
@@ -91,12 +96,14 @@
   </node>
   <node concept="1TIwiD" id="4pw9jmIACFK">
     <property role="TrG5h" value="NoteOffEvent" />
+    <property role="1pbfSe" value="184897499" />
     <ref role="1TJDcQ" node="4pw9jmIACDW" resolve="NoteEvent" />
   </node>
   <node concept="1TIwiD" id="5Su2du4SCCI">
     <property role="TrG5h" value="MidiPlayable" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="486501627" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
