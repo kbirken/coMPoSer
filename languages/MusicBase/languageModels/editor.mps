@@ -59,6 +59,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -245,6 +246,22 @@
       <property role="3F0ifm" value="" />
       <node concept="VPxyj" id="6oHN6atqeV2" role="3F10Kt">
         <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6oHN6atsrmD">
+    <ref role="1XX52x" to="lom3:6oHN6atsrlK" resolve="Repeat" />
+    <node concept="3EZMnI" id="6oHN6atsrmF" role="2wV5jI">
+      <node concept="l2Vlx" id="6oHN6atsrmG" role="2iSdaV" />
+      <node concept="3F0ifn" id="6oHN6atsrmH" role="3EZMnx">
+        <property role="3F0ifm" value="repeat" />
+      </node>
+      <node concept="3F0A7n" id="6oHN6atsrmR" role="3EZMnx">
+        <ref role="1NtTu8" to="lom3:6oHN6atsrlL" resolve="times" />
+        <node concept="ljvvj" id="6oHN6atsrmS" role="3F10Kt" />
+      </node>
+      <node concept="3F1sOY" id="6oHN6atsroN" role="3EZMnx">
+        <ref role="1NtTu8" to="lom3:6oHN6atsrlP" />
       </node>
     </node>
   </node>

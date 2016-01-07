@@ -183,5 +183,21 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6oHN6atsrlK">
+    <property role="1pbfSe" value="60785106" />
+    <property role="TrG5h" value="Repeat" />
+    <property role="34LRSv" value="repeat" />
+    <ref role="1TJDcQ" node="4pw9jmIAqe6" resolve="Playable" />
+    <node concept="1TJgyi" id="6oHN6atsrlL" role="1TKVEl">
+      <property role="TrG5h" value="times" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="6oHN6atsrlP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="playable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4pw9jmIAqe6" resolve="Playable" />
+    </node>
+  </node>
 </model>
 
