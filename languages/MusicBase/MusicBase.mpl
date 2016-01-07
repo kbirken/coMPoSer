@@ -70,6 +70,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="fead8203-e62d-40f0-8f88-5867607c1f9a(MusicBase#5071094092909364598)" />
+            <external-mapping>
+              <mapping-node modelUID="r:7752cbf8-a05a-46e1-bc22-681a922ea789(MusicBase.generator.template.main@generator)" nodeID="7362765689740663841" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="fead8203-e62d-40f0-8f88-5867607c1f9a(MusicBase#5071094092909364598)" />
+            <external-mapping>
+              <mapping-node modelUID="r:7752cbf8-a05a-46e1-bc22-681a922ea789(MusicBase.generator.template.main@generator)" nodeID="5071094092909364599" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
