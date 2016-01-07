@@ -2,6 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/ABClike/ABClike.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ABClike/sandbox/ABClike.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Midi/Midi.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Midi/sandbox/Midi.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/MusicBase/MusicBase.mpl" folder="" />
