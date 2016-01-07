@@ -45,7 +45,7 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="4pw9jmIs_ze">
-    <property role="TrG5h" value="Note" />
+    <property role="TrG5h" value="RawNote" />
     <property role="34LRSv" value="note" />
     <property role="R4oN_" value="musical note" />
     <property role="1pbfSe" value="187531773" />
