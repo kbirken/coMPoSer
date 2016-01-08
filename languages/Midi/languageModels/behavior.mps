@@ -83,6 +83,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -141,6 +147,11 @@
       <property role="TrG5h" value="getSortedEvents" />
       <node concept="3Tm1VV" id="5Su2du4NWSF" role="1B3o_S" />
       <node concept="3clFbS" id="5Su2du4NWSG" role="3clF47">
+        <node concept="3SKdUt" id="7HIyxzK62$0" role="3cqZAp">
+          <node concept="3SKdUq" id="7HIyxzK62$2" role="3SKWNk">
+            <property role="3SKdUp" value="we have to force it into a list. otherwise the foreach is not executed in order." />
+          </node>
+        </node>
         <node concept="3cpWs8" id="7HIyxzK5Dwx" role="3cqZAp">
           <node concept="3cpWsn" id="7HIyxzK5Dwy" role="3cpWs9">
             <property role="TrG5h" value="list" />
