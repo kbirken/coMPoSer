@@ -7,8 +7,6 @@
   </languages>
   <imports>
     <import index="e2m9" ref="r:726e8c78-944b-4e4c-a772-b49120258764(Midi.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -32,7 +30,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -42,12 +39,6 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
-      </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -77,7 +68,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -85,7 +75,6 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -241,50 +230,6 @@
                         </node>
                         <node concept="3TrcHB" id="7HIyxzK5jg6" role="2OqNvi">
                           <ref role="3TsBF5" to="e2m9:4pw9jmIACDy" resolve="time" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="7HIyxzK5sbs" role="3cqZAp">
-                    <node concept="2OqwBi" id="7HIyxzK5sbp" role="3clFbG">
-                      <node concept="10M0yZ" id="7HIyxzK5sbq" role="2Oq$k0">
-                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                        <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
-                      </node>
-                      <node concept="liA8E" id="7HIyxzK5sbr" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                        <node concept="3cpWs3" id="7HIyxzK5vcB" role="37wK5m">
-                          <node concept="2OqwBi" id="7HIyxzK5vt0" role="3uHU7w">
-                            <node concept="37vLTw" id="7HIyxzK5vmL" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7HIyxzK5iG1" resolve="it" />
-                            </node>
-                            <node concept="3TrcHB" id="7HIyxzK5vDc" role="2OqNvi">
-                              <ref role="3TsBF5" to="e2m9:4pw9jmIACDy" resolve="time" />
-                            </node>
-                          </node>
-                          <node concept="3cpWs3" id="7HIyxzK5tSZ" role="3uHU7B">
-                            <node concept="3cpWs3" id="7HIyxzK5tA8" role="3uHU7B">
-                              <node concept="3cpWs3" id="7HIyxzK5sSv" role="3uHU7B">
-                                <node concept="3cpWs3" id="7HIyxzK5sEd" role="3uHU7B">
-                                  <node concept="Xl_RD" id="7HIyxzK5sga" role="3uHU7B">
-                                    <property role="Xl_RC" value="thisOld: " />
-                                  </node>
-                                  <node concept="37vLTw" id="7HIyxzK5sJf" role="3uHU7w">
-                                    <ref role="3cqZAo" node="7HIyxzK5iHO" resolve="thisTime" />
-                                  </node>
-                                </node>
-                                <node concept="Xl_RD" id="7HIyxzK5t0w" role="3uHU7w">
-                                  <property role="Xl_RC" value=" - prev: " />
-                                </node>
-                              </node>
-                              <node concept="37vLTw" id="7HIyxzK5tIN" role="3uHU7w">
-                                <ref role="3cqZAo" node="7HIyxzK5icn" resolve="tPrev" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="7HIyxzK5u2v" role="3uHU7w">
-                              <property role="Xl_RC" value=" - thisNew: " />
-                            </node>
-                          </node>
                         </node>
                       </node>
                     </node>
