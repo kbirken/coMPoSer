@@ -9,7 +9,11 @@
   <imports />
   <registry>
     <language id="b4c83bfc-bf22-4ef3-9539-3d39b490a670" name="MusicBase">
+      <concept id="6781867810608813087" name="MusicBase.structure.NamedPlayable" flags="ng" index="3qS9N8">
+        <property id="5818581779097529860" name="ticksPerBeat" index="2n5eX8" />
+      </concept>
       <concept id="6781867810608978156" name="MusicBase.structure.Library" flags="ng" index="3r7L0V">
+        <property id="5818581779098149695" name="beatsPerMinute" index="2n2Q9N" />
         <child id="6781867810608978175" name="items" index="3r7L0C" />
       </concept>
       <concept id="6781867810609036366" name="MusicBase.structure.PlayableRef" flags="ng" index="3r7Zip">
@@ -22,7 +26,6 @@
         <child id="5071094092912001439" name="playable" index="3CYyiE" />
       </concept>
       <concept id="5071094092911977531" name="MusicBase.structure.Sequence" flags="ng" index="3CYo4e">
-        <property id="7362765689740572145" name="ticksPerBeat" index="3VhBAj" />
         <child id="5071094092911977559" name="items" index="3CYo5y" />
       </concept>
       <concept id="5071094092911977388" name="MusicBase.structure.Sound" flags="ng" index="3CYoqp">
@@ -59,6 +62,7 @@
   <node concept="3C5ZkV" id="5Su2du4YA_I">
     <property role="TrG5h" value="ImperialMarch" />
     <property role="3CXR_N" value="-2" />
+    <property role="3VhFKO" value="100" />
     <node concept="3CYo4e" id="5Su2du4Zfvx" role="3CYyiE">
       <node concept="3r7Zip" id="6oHN6atrFDX" role="3CYo5y">
         <property role="3r6Af4" value="0" />
@@ -116,9 +120,10 @@
   </node>
   <node concept="3r7L0V" id="5Su2du50vGg">
     <property role="TrG5h" value="ImperialMarchLib" />
+    <property role="2n2Q9N" value="80" />
     <node concept="3CYo4e" id="6oHN6atr00F" role="3r7L0C">
       <property role="TrG5h" value="MainThemeRhythm1" />
-      <property role="3VhBAj" value="600" />
+      <property role="2n5eX8" value="600" />
       <node concept="3VgZa0" id="52ZKkN7BLWl" role="3CYo5y">
         <property role="3CYorX" value="100" />
         <node concept="2nb6IX" id="52ZKkN7BLWk" role="2nb5QN">
@@ -245,7 +250,7 @@
     </node>
     <node concept="3CYo4e" id="6oHN6atrFvM" role="3r7L0C">
       <property role="TrG5h" value="MainThemeRhythm2" />
-      <property role="3VhBAj" value="600" />
+      <property role="2n5eX8" value="600" />
       <node concept="3VgZa0" id="52ZKkN7BMjU" role="3CYo5y">
         <property role="3CYorX" value="100" />
         <node concept="2nb6IX" id="52ZKkN7BMjV" role="2nb5QN">
@@ -392,89 +397,89 @@
     </node>
     <node concept="3CYo4e" id="5Su2du50vKe" role="3r7L0C">
       <property role="TrG5h" value="MainThemeA" />
-      <property role="3VhBAj" value="600" />
+      <property role="2n5eX8" value="60" />
       <node concept="3VgZa0" id="52ZKkN7CMMe" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6DH" id="52ZKkN7CMMf" role="2nb5QN">
           <property role="2nb6DC" value="a" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMM2" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2n8Ar7" id="52ZKkN7CMM3" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMMg" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6DH" id="52ZKkN7CMMh" role="2nb5QN">
           <property role="2nb6DC" value="a" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMM4" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2n8Ar7" id="52ZKkN7CMM5" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMMi" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6DH" id="52ZKkN7CMMj" role="2nb5QN">
           <property role="2nb6DC" value="a" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMM6" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2n8Ar7" id="52ZKkN7CMM7" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMMk" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6DH" id="52ZKkN7CMMl" role="2nb5QN">
           <property role="2nb6DC" value="f" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMM8" role="3CYo5y">
-        <property role="3CYorX" value="150" />
+        <property role="3CYorX" value="15" />
         <node concept="2n8Ar7" id="52ZKkN7CMM9" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMMm" role="3CYo5y">
-        <property role="3CYorX" value="150" />
+        <property role="3CYorX" value="15" />
         <node concept="2nb6F0" id="52ZKkN7CMMn" role="2nb5QN">
           <property role="2nb6DC" value="c" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMMo" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6DH" id="52ZKkN7CMMp" role="2nb5QN">
           <property role="2nb6DC" value="a" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMMa" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2n8Ar7" id="52ZKkN7CMMb" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMMq" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6DH" id="52ZKkN7CMMr" role="2nb5QN">
           <property role="2nb6DC" value="f" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMMc" role="3CYo5y">
-        <property role="3CYorX" value="150" />
+        <property role="3CYorX" value="15" />
         <node concept="2n8Ar7" id="52ZKkN7CMMd" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMMs" role="3CYo5y">
-        <property role="3CYorX" value="150" />
+        <property role="3CYorX" value="15" />
         <node concept="2nb6F0" id="52ZKkN7D8rD" role="2nb5QN">
           <property role="2nb6DC" value="c" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7CMMu" role="3CYo5y">
-        <property role="3CYorX" value="1200" />
+        <property role="3CYorX" value="120" />
         <node concept="2nb6DH" id="52ZKkN7CMMv" role="2nb5QN">
           <property role="2nb6DC" value="a" />
           <property role="2nb6CE" value="false" />
@@ -483,89 +488,89 @@
     </node>
     <node concept="3CYo4e" id="5Su2du4Zfyk" role="3r7L0C">
       <property role="TrG5h" value="MainThemeB" />
-      <property role="3VhBAj" value="800" />
+      <property role="2n5eX8" value="60" />
       <node concept="3VgZa0" id="52ZKkN7D8ue" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6F0" id="52ZKkN7D8uf" role="2nb5QN">
           <property role="2nb6DC" value="e" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8u2" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2n8Ar7" id="52ZKkN7D8u3" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8ug" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6F0" id="52ZKkN7D8uh" role="2nb5QN">
           <property role="2nb6DC" value="e" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8u4" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2n8Ar7" id="52ZKkN7D8u5" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8ui" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6F0" id="52ZKkN7D8uj" role="2nb5QN">
           <property role="2nb6DC" value="e" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8u6" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2n8Ar7" id="52ZKkN7D8u7" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8uk" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6F0" id="52ZKkN7D8ul" role="2nb5QN">
           <property role="2nb6DC" value="f" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8u8" role="3CYo5y">
-        <property role="3CYorX" value="150" />
+        <property role="3CYorX" value="15" />
         <node concept="2n8Ar7" id="52ZKkN7D8u9" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8um" role="3CYo5y">
-        <property role="3CYorX" value="150" />
+        <property role="3CYorX" value="15" />
         <node concept="2nb6F0" id="52ZKkN7D8un" role="2nb5QN">
           <property role="2nb6DC" value="c" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8uo" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6DH" id="52ZKkN7D8up" role="2nb5QN">
           <property role="2nb6DC" value="a" />
           <property role="2nb6CE" value="true" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8ua" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2n8Ar7" id="52ZKkN7D8ub" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8uq" role="3CYo5y">
-        <property role="3CYorX" value="300" />
+        <property role="3CYorX" value="30" />
         <node concept="2nb6DH" id="52ZKkN7D8ur" role="2nb5QN">
           <property role="2nb6DC" value="f" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8uc" role="3CYo5y">
-        <property role="3CYorX" value="150" />
+        <property role="3CYorX" value="15" />
         <node concept="2n8Ar7" id="52ZKkN7D8ud" role="2nb5QN" />
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8us" role="3CYo5y">
-        <property role="3CYorX" value="150" />
+        <property role="3CYorX" value="15" />
         <node concept="2nb6F0" id="52ZKkN7D8ut" role="2nb5QN">
           <property role="2nb6DC" value="c" />
           <property role="2nb6CE" value="false" />
         </node>
       </node>
       <node concept="3VgZa0" id="52ZKkN7D8uu" role="3CYo5y">
-        <property role="3CYorX" value="600" />
+        <property role="3CYorX" value="60" />
         <node concept="2nb6DH" id="52ZKkN7D8uv" role="2nb5QN">
           <property role="2nb6DC" value="a" />
           <property role="2nb6CE" value="false" />
@@ -580,6 +585,7 @@
     <node concept="3Vn7$i" id="52ZKkN7DtOP" role="3CYyiE">
       <property role="3Vn7$j" value="3" />
       <node concept="3CYo4e" id="52ZKkN7DtOQ" role="3Vn7$n">
+        <property role="2n5eX8" value="1000" />
         <node concept="3VgZa0" id="52ZKkN7DtOR" role="3CYo5y">
           <property role="3CYorX" value="2000" />
           <node concept="2nb6IX" id="52ZKkN7DtOS" role="2nb5QN">
@@ -605,6 +611,7 @@
     <property role="TrG5h" value="TestSong1" />
     <property role="3CXR_N" value="15" />
     <node concept="3CYo4e" id="52ZKkN7DZ5Q" role="3CYyiE">
+      <property role="2n5eX8" value="1000" />
       <node concept="3VgZa0" id="52ZKkN7DZ6b" role="3CYo5y">
         <property role="3CYorX" value="200" />
         <node concept="2nb6DH" id="52ZKkN7DZ6a" role="2nb5QN">

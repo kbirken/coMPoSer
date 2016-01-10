@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="lom3" ref="r:2c1687dc-3d5e-41c6-abc7-78839b701c42(MusicBase.structure)" implicit="true" />
+    <import index="lom3" ref="r:2c1687dc-3d5e-41c6-abc7-78839b701c42(MusicBase.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -185,7 +185,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0A7n" id="6oHN6atqVoU" role="3EZMnx">
-        <ref role="1NtTu8" to="lom3:6oHN6atqVnL" resolve="ticksPerBeat" />
+        <ref role="1NtTu8" to="lom3:52ZKkN7EMS4" resolve="ticksPerBeat" />
       </node>
       <node concept="3F0ifn" id="6oHN6atq9GW" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -307,6 +307,9 @@
       </node>
       <node concept="3F0A7n" id="5Su2du4ZDim" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0A7n" id="52ZKkN7ENoZ" role="3EZMnx">
+        <ref role="1NtTu8" to="lom3:52ZKkN7EMS4" resolve="ticksPerBeat" />
       </node>
       <node concept="3F0ifn" id="5Su2du4XG6G" role="3EZMnx">
         <property role="3F0ifm" value="{" />

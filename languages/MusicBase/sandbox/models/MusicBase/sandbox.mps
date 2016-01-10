@@ -11,15 +11,18 @@
   </imports>
   <registry>
     <language id="b4c83bfc-bf22-4ef3-9539-3d39b490a670" name="MusicBase">
+      <concept id="6781867810608813087" name="MusicBase.structure.NamedPlayable" flags="ng" index="3qS9N8">
+        <property id="5818581779097529860" name="ticksPerBeat" index="2n5eX8" />
+      </concept>
       <concept id="5071094092909402318" name="MusicBase.structure.RawNote" flags="ng" index="3C4BRV">
         <property id="5071094092909448945" name="key" index="3C4MJ4" />
       </concept>
       <concept id="5071094092909760526" name="MusicBase.structure.Song" flags="ng" index="3C5ZkV">
         <property id="5071094092911828038" name="transpose" index="3CXR_N" />
+        <property id="7362765689740554326" name="beatsPerMinute" index="3VhFKO" />
         <child id="5071094092912001439" name="playable" index="3CYyiE" />
       </concept>
       <concept id="5071094092911977531" name="MusicBase.structure.Sequence" flags="ng" index="3CYo4e">
-        <property id="7362765689740572145" name="ticksPerBeat" index="3VhBAj" />
         <child id="5071094092911977559" name="items" index="3CYo5y" />
       </concept>
       <concept id="5071094092911977388" name="MusicBase.structure.Sound" flags="ng" index="3CYoqp">
@@ -31,39 +34,28 @@
       <concept id="7362765689740371390" name="MusicBase.structure.EmptyPlayable" flags="ng" index="3VhmBs" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
   <node concept="3C5ZkV" id="5Su2du4QVOp">
-    <property role="TrG5h" value="ExampleSong" />
+    <property role="TrG5h" value="ExampleSong02" />
     <property role="3CXR_N" value="0" />
+    <property role="3VhFKO" value="120" />
     <node concept="3CYo4e" id="5Su2du4QVOr" role="3CYyiE">
-      <property role="3VhBAj" value="500" />
-      <node concept="1X3_iC" id="6oHN6atq5Ax" role="lGtFl">
-        <property role="3V$3am" value="items" />
-        <property role="3V$3ak" value="b4c83bfc-bf22-4ef3-9539-3d39b490a670/5071094092911977531/5071094092911977559" />
-        <node concept="3C4BRV" id="5Su2du4QVOu" role="8Wnug">
-          <property role="3C4MJ4" value="48" />
-          <property role="3CYorX" value="500" />
-        </node>
+      <property role="2n5eX8" value="500" />
+      <property role="TrG5h" value="S1" />
+      <node concept="3C4BRV" id="5Su2du4QVOu" role="3CYo5y">
+        <property role="3C4MJ4" value="48" />
+        <property role="3CYorX" value="500" />
       </node>
       <node concept="3C4BRV" id="5Su2du4QVOD" role="3CYo5y">
         <property role="3C4MJ4" value="50" />
         <property role="3CYorX" value="500" />
       </node>
       <node concept="3CYysc" id="5Su2du4Wibl" role="3CYo5y">
+        <property role="TrG5h" value="M1" />
         <node concept="3C4BRV" id="5Su2du4Wibw" role="3CYytw">
           <property role="3C4MJ4" value="48" />
           <property role="3CYorX" value="500" />
@@ -73,7 +65,8 @@
           <property role="3CYorX" value="500" />
         </node>
         <node concept="3CYo4e" id="5Su2du4WQ3e" role="3CYytw">
-          <property role="3VhBAj" value="500" />
+          <property role="2n5eX8" value="500" />
+          <property role="TrG5h" value="S2" />
           <node concept="3C4BRV" id="5Su2du4WQ3j" role="3CYo5y">
             <property role="3C4MJ4" value="59" />
             <property role="3CYorX" value="100" />
@@ -94,7 +87,8 @@
       </node>
       <node concept="3VhmBs" id="6oHN6attBo4" role="3CYo5y" />
       <node concept="3CYo4e" id="5Su2du4VTUz" role="3CYo5y">
-        <property role="3VhBAj" value="500" />
+        <property role="2n5eX8" value="500" />
+        <property role="TrG5h" value="S3" />
         <node concept="3C4BRV" id="5Su2du4VTUF" role="3CYo5y">
           <property role="3C4MJ4" value="55" />
           <property role="3CYorX" value="100" />
@@ -131,6 +125,7 @@
       </node>
       <node concept="3VhmBs" id="6oHN6attBnE" role="3CYo5y" />
       <node concept="3CYysc" id="5Su2du4Y_Po" role="3CYo5y">
+        <property role="TrG5h" value="M2" />
         <node concept="3C4BRV" id="5Su2du4Y_PI" role="3CYytw">
           <property role="3C4MJ4" value="48" />
           <property role="3CYorX" value="4000" />
@@ -147,6 +142,19 @@
           <property role="3C4MJ4" value="62" />
           <property role="3CYorX" value="4000" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3C5ZkV" id="52ZKkN7Ffmy">
+    <property role="3CXR_N" value="0" />
+    <property role="3VhFKO" value="80" />
+    <property role="TrG5h" value="ExampleSong01" />
+    <node concept="3CYo4e" id="52ZKkN7FfmB" role="3CYyiE">
+      <property role="2n5eX8" value="1000" />
+      <property role="TrG5h" value="Seq1" />
+      <node concept="3C4BRV" id="52ZKkN7FfmV" role="3CYo5y">
+        <property role="3C4MJ4" value="48" />
+        <property role="3CYorX" value="2000" />
       </node>
     </node>
   </node>
