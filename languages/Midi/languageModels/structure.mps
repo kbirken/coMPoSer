@@ -128,5 +128,28 @@
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
   </node>
+  <node concept="1TIwiD" id="$8H1LjRRHq">
+    <property role="1pbfSe" value="1558720374" />
+    <property role="TrG5h" value="ProgramChangeEvent" />
+    <ref role="1TJDcQ" node="4pw9jmIACD4" resolve="MidiEvent" />
+    <node concept="1TJgyj" id="$8H1LjRX39" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="instrument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="$8H1LjRRHt" resolve="Instrument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="$8H1LjRRHt">
+    <property role="1pbfSe" value="1558720377" />
+    <property role="TrG5h" value="Instrument" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="$8H1LjRRHu" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="$8H1LjRRHw" role="1TKVEl">
+      <property role="TrG5h" value="key" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

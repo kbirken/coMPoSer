@@ -23,6 +23,7 @@
         <child id="5071094092912001439" name="playable" index="3CYyiE" />
       </concept>
       <concept id="5071094092911977531" name="MusicBase.structure.Sequence" flags="ng" index="3CYo4e">
+        <property id="650968179914084162" name="channelId" index="1qP3Hu" />
         <child id="5071094092911977559" name="items" index="3CYo5y" />
       </concept>
       <concept id="5071094092911977388" name="MusicBase.structure.Sound" flags="ng" index="3CYoqp">
@@ -46,6 +47,7 @@
     <node concept="3CYo4e" id="5Su2du4QVOr" role="3CYyiE">
       <property role="2n5eX8" value="500" />
       <property role="TrG5h" value="S1" />
+      <property role="1qP3Hu" value="0" />
       <node concept="3C4BRV" id="5Su2du4QVOu" role="3CYo5y">
         <property role="3C4MJ4" value="48" />
         <property role="3CYorX" value="500" />
@@ -126,6 +128,19 @@
       <node concept="3VhmBs" id="6oHN6attBnE" role="3CYo5y" />
       <node concept="3CYysc" id="5Su2du4Y_Po" role="3CYo5y">
         <property role="TrG5h" value="M2" />
+        <node concept="3CYo4e" id="$8H1LjRQX1" role="3CYytw">
+          <property role="2n5eX8" value="10" />
+          <property role="1qP3Hu" value="9" />
+          <property role="TrG5h" value="DrumHit" />
+          <node concept="3C4BRV" id="$8H1LjRQZ0" role="3CYo5y">
+            <property role="3C4MJ4" value="48" />
+            <property role="3CYorX" value="10" />
+          </node>
+          <node concept="3C4BRV" id="$8H1LjRQX8" role="3CYo5y">
+            <property role="3C4MJ4" value="50" />
+            <property role="3CYorX" value="10" />
+          </node>
+        </node>
         <node concept="3C4BRV" id="5Su2du4Y_PI" role="3CYytw">
           <property role="3C4MJ4" value="48" />
           <property role="3CYorX" value="4000" />

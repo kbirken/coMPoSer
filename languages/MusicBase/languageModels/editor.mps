@@ -187,6 +187,12 @@
       <node concept="3F0A7n" id="6oHN6atqVoU" role="3EZMnx">
         <ref role="1NtTu8" to="lom3:52ZKkN7EMS4" resolve="ticksPerBeat" />
       </node>
+      <node concept="3F0ifn" id="$8H1LjRa3d" role="3EZMnx">
+        <property role="3F0ifm" value="on" />
+      </node>
+      <node concept="3F0A7n" id="$8H1LjR9Lf" role="3EZMnx">
+        <ref role="1NtTu8" to="lom3:$8H1LjR8X2" resolve="channelId" />
+      </node>
       <node concept="3F0ifn" id="6oHN6atq9GW" role="3EZMnx">
         <property role="3F0ifm" value="{" />
       </node>

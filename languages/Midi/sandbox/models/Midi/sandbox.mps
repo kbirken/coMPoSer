@@ -11,6 +11,12 @@
       <concept id="5818581779098235020" name="Midi.structure.MidiSong" flags="ng" index="2n2z70">
         <child id="5818581779098235021" name="sequence" index="2n2z71" />
       </concept>
+      <concept id="650968179914275677" name="Midi.structure.Instrument" flags="ng" index="1qPWX1">
+        <property id="650968179914275680" name="key" index="1qPWXW" />
+      </concept>
+      <concept id="650968179914275674" name="Midi.structure.ProgramChangeEvent" flags="ng" index="1qPWX6">
+        <child id="650968179914297545" name="instrument" index="1qPQjl" />
+      </concept>
       <concept id="5071094092912036368" name="Midi.structure.MidiSequence" flags="ng" index="3CYEW_">
         <property id="5818581779098197001" name="channelId" index="2n2DP5" />
         <child id="5071094092912036448" name="events" index="3CYEXl" />
@@ -69,7 +75,12 @@
       </node>
       <node concept="3CYEW_" id="52ZKkN7I1u7" role="3CYEXl">
         <property role="2n2DP5" value="0" />
-        <property role="TrG5h" value="Piano" />
+        <property role="TrG5h" value="Melody" />
+        <node concept="1qPWX6" id="$8H1LjS58A" role="3CYEXl">
+          <node concept="1qPWX1" id="$8H1LjSgqN" role="1qPQjl">
+            <property role="1qPWXW" value="5" />
+          </node>
+        </node>
         <node concept="3CYEZZ" id="52ZKkN7I1oo" role="3CYEXl">
           <property role="3CYEZj" value="127" />
           <property role="3CYEYH" value="48" />

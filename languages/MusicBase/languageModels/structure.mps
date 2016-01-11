@@ -106,6 +106,10 @@
     <property role="R4oN_" value="a sequence of musical entities" />
     <property role="1pbfSe" value="184956560" />
     <ref role="1TJDcQ" node="5Su2du4ZDgv" resolve="NamedPlayable" />
+    <node concept="1TJgyi" id="$8H1LjR8X2" role="1TKVEl">
+      <property role="TrG5h" value="channelId" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="4pw9jmIAqhn" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="items" />
