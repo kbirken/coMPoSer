@@ -15,6 +15,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -45,21 +46,22 @@
   </registry>
   <node concept="1TIwiD" id="4pw9jmIACCg">
     <property role="TrG5h" value="MidiSequence" />
-    <property role="19KtqR" value="true" />
     <property role="R4oN_" value="a sequence of MIDI events" />
     <property role="1pbfSe" value="184897723" />
+    <property role="34LRSv" value="midi sequence" />
     <ref role="1TJDcQ" node="5Su2du4SCCI" resolve="MidiPlayable" />
+    <node concept="1TJgyi" id="52ZKkN7HlK9" role="1TKVEl">
+      <property role="TrG5h" value="channelId" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="4pw9jmIACDw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="events" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5Su2du4SCCI" resolve="MidiPlayable" />
     </node>
-    <node concept="PrWs8" id="4pw9jmIAEn4" role="PzmwI">
+    <node concept="PrWs8" id="52ZKkN7I1J7" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="4pw9jmIAD_P" role="PzmwI">
-      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
   </node>
   <node concept="1TIwiD" id="4pw9jmIACD4">
@@ -105,6 +107,26 @@
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="486501627" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="52ZKkN7Hv2c">
+    <property role="1pbfSe" value="410366424" />
+    <property role="TrG5h" value="MidiSong" />
+    <property role="34LRSv" value="midi song" />
+    <property role="R4oN_" value="a song in Midi format" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="52ZKkN7Hv2d" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sequence" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4pw9jmIACCg" resolve="MidiSequence" />
+    </node>
+    <node concept="PrWs8" id="52ZKkN7Hwjn" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="52ZKkN7Hwjs" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
+    </node>
   </node>
 </model>
 

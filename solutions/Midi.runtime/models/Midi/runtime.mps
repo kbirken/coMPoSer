@@ -110,6 +110,7 @@
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -141,17 +142,6 @@
         <ref role="3uigEE" to="zcvs:~Synthesizer" resolve="Synthesizer" />
       </node>
       <node concept="10Nm6u" id="4pw9jmI$GId" role="33vP2m" />
-    </node>
-    <node concept="312cEg" id="4pw9jmI$GZW" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="channel" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="4pw9jmI$GY1" role="1B3o_S" />
-      <node concept="3uibUv" id="4pw9jmI$GZI" role="1tU5fm">
-        <ref role="3uigEE" to="zcvs:~MidiChannel" resolve="MidiChannel" />
-      </node>
-      <node concept="10Nm6u" id="4pw9jmI$H23" role="33vP2m" />
     </node>
     <node concept="312cEg" id="4pw9jmIAfAL" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -222,27 +212,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="4pw9jmI$H2s" role="3cqZAp" />
-            <node concept="3clFbF" id="4pw9jmI$H4O" role="3cqZAp">
-              <node concept="37vLTI" id="4pw9jmI$H62" role="3clFbG">
-                <node concept="AH0OO" id="4pw9jmI$Hgp" role="37vLTx">
-                  <node concept="3cmrfG" id="4pw9jmI$Hjb" role="AHEQo">
-                    <property role="3cmrfH" value="0" />
-                  </node>
-                  <node concept="2OqwBi" id="4pw9jmI$H8z" role="AHHXb">
-                    <node concept="37vLTw" id="4pw9jmI$H7t" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4pw9jmI$GHD" resolve="synth" />
-                    </node>
-                    <node concept="liA8E" id="4pw9jmI$HdD" role="2OqNvi">
-                      <ref role="37wK5l" to="zcvs:~Synthesizer.getChannels():javax.sound.midi.MidiChannel[]" resolve="getChannels" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTw" id="4pw9jmI$H4M" role="37vLTJ">
-                  <ref role="3cqZAo" node="4pw9jmI$GZW" resolve="channel" />
-                </node>
-              </node>
-            </node>
           </node>
           <node concept="TDmWw" id="4pw9jmI$GNw" role="TEbGg">
             <node concept="3clFbS" id="4pw9jmI$GNx" role="TDEfX">
@@ -303,12 +272,22 @@
                 </node>
                 <node concept="liA8E" id="4pw9jmI_8AV" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="4pw9jmI_8Q4" role="37wK5m">
+                  <node concept="3cpWs3" id="52ZKkN7HqFg" role="37wK5m">
                     <node concept="37vLTw" id="4pw9jmI_8RR" role="3uHU7w">
                       <ref role="3cqZAo" node="4pw9jmI$I3u" resolve="key" />
                     </node>
-                    <node concept="Xl_RD" id="4pw9jmI_8CH" role="3uHU7B">
-                      <property role="Xl_RC" value="MidiPlayerBase: noteOn " />
+                    <node concept="3cpWs3" id="52ZKkN7HqNb" role="3uHU7B">
+                      <node concept="Xl_RD" id="52ZKkN7HqNo" role="3uHU7w">
+                        <property role="Xl_RC" value=", noteOn " />
+                      </node>
+                      <node concept="3cpWs3" id="4pw9jmI_8Q4" role="3uHU7B">
+                        <node concept="Xl_RD" id="4pw9jmI_8CH" role="3uHU7B">
+                          <property role="Xl_RC" value="MidiPlayerBase: channel " />
+                        </node>
+                        <node concept="37vLTw" id="52ZKkN7HqF$" role="3uHU7w">
+                          <ref role="3cqZAo" node="52ZKkN7Hq50" resolve="channelId" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -319,17 +298,20 @@
             <ref role="3cqZAo" node="4pw9jmIAfAL" resolve="verbose" />
           </node>
         </node>
-        <node concept="3clFbF" id="4pw9jmI$Icg" role="3cqZAp">
-          <node concept="2OqwBi" id="4pw9jmI$IdG" role="3clFbG">
-            <node concept="37vLTw" id="4pw9jmI$Icf" role="2Oq$k0">
-              <ref role="3cqZAo" node="4pw9jmI$GZW" resolve="channel" />
+        <node concept="3clFbF" id="52ZKkN7Htu5" role="3cqZAp">
+          <node concept="2OqwBi" id="52ZKkN7Ht_9" role="3clFbG">
+            <node concept="1rXfSq" id="52ZKkN7Htu3" role="2Oq$k0">
+              <ref role="37wK5l" node="52ZKkN7HsWz" resolve="channel" />
+              <node concept="37vLTw" id="52ZKkN7Ht$G" role="37wK5m">
+                <ref role="3cqZAo" node="52ZKkN7Hq50" resolve="channelId" />
+              </node>
             </node>
-            <node concept="liA8E" id="4pw9jmI$Igi" role="2OqNvi">
+            <node concept="liA8E" id="52ZKkN7HtD7" role="2OqNvi">
               <ref role="37wK5l" to="zcvs:~MidiChannel.noteOn(int,int):void" resolve="noteOn" />
-              <node concept="37vLTw" id="4pw9jmI$Ihm" role="37wK5m">
+              <node concept="37vLTw" id="52ZKkN7HtDK" role="37wK5m">
                 <ref role="3cqZAo" node="4pw9jmI$I3u" resolve="key" />
               </node>
-              <node concept="3cmrfG" id="4pw9jmI$IiL" role="37wK5m">
+              <node concept="3cmrfG" id="52ZKkN7HtEW" role="37wK5m">
                 <property role="3cmrfH" value="127" />
               </node>
             </node>
@@ -338,6 +320,10 @@
       </node>
       <node concept="3Tm1VV" id="4pw9jmI$HVw" role="1B3o_S" />
       <node concept="3cqZAl" id="4pw9jmI$HZd" role="3clF45" />
+      <node concept="37vLTG" id="52ZKkN7Hq50" role="3clF46">
+        <property role="TrG5h" value="channelId" />
+        <node concept="10Oyi0" id="52ZKkN7HqaL" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="4pw9jmI$I3u" role="3clF46">
         <property role="TrG5h" value="key" />
         <node concept="10Oyi0" id="4pw9jmI$I3t" role="1tU5fm" />
@@ -346,27 +332,37 @@
     <node concept="2tJIrI" id="5Su2du4POdS" role="jymVt" />
     <node concept="3clFb_" id="4pw9jmI$IrC" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="noteOff" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="noteOff" />
       <node concept="3clFbS" id="4pw9jmI$IrF" role="3clF47">
         <node concept="3clFbJ" id="4pw9jmIAh72" role="3cqZAp">
           <node concept="3clFbS" id="4pw9jmIAh74" role="3clFbx">
-            <node concept="3clFbF" id="4pw9jmIAc85" role="3cqZAp">
-              <node concept="2OqwBi" id="4pw9jmIAc86" role="3clFbG">
-                <node concept="10M0yZ" id="4pw9jmIAc87" role="2Oq$k0">
-                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            <node concept="3clFbF" id="52ZKkN7Hr1Q" role="3cqZAp">
+              <node concept="2OqwBi" id="52ZKkN7Hr1S" role="3clFbG">
+                <node concept="10M0yZ" id="52ZKkN7Hr1T" role="2Oq$k0">
                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 </node>
-                <node concept="liA8E" id="4pw9jmIAc88" role="2OqNvi">
+                <node concept="liA8E" id="52ZKkN7Hr1U" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="4pw9jmIAc89" role="37wK5m">
-                    <node concept="37vLTw" id="4pw9jmIAc8a" role="3uHU7w">
+                  <node concept="3cpWs3" id="52ZKkN7Hr1V" role="37wK5m">
+                    <node concept="37vLTw" id="52ZKkN7Hr1W" role="3uHU7w">
                       <ref role="3cqZAo" node="4pw9jmI$IvW" resolve="key" />
                     </node>
-                    <node concept="Xl_RD" id="4pw9jmIAc8b" role="3uHU7B">
-                      <property role="Xl_RC" value="MidiPlayerBase: noteOff " />
+                    <node concept="3cpWs3" id="52ZKkN7Hr1X" role="3uHU7B">
+                      <node concept="Xl_RD" id="52ZKkN7Hr1Y" role="3uHU7w">
+                        <property role="Xl_RC" value=", noteOff " />
+                      </node>
+                      <node concept="3cpWs3" id="52ZKkN7Hr1Z" role="3uHU7B">
+                        <node concept="Xl_RD" id="52ZKkN7Hr20" role="3uHU7B">
+                          <property role="Xl_RC" value="MidiPlayerBase: channel " />
+                        </node>
+                        <node concept="37vLTw" id="52ZKkN7Hu5v" role="3uHU7w">
+                          <ref role="3cqZAo" node="52ZKkN7HtVU" resolve="channelId" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -377,14 +373,17 @@
             <ref role="3cqZAo" node="4pw9jmIAfAL" resolve="verbose" />
           </node>
         </node>
-        <node concept="3clFbF" id="4pw9jmI$Izl" role="3cqZAp">
-          <node concept="2OqwBi" id="4pw9jmI$IzQ" role="3clFbG">
-            <node concept="37vLTw" id="4pw9jmI$Izk" role="2Oq$k0">
-              <ref role="3cqZAo" node="4pw9jmI$GZW" resolve="channel" />
+        <node concept="3clFbF" id="52ZKkN7HtIo" role="3cqZAp">
+          <node concept="2OqwBi" id="52ZKkN7HtIp" role="3clFbG">
+            <node concept="1rXfSq" id="52ZKkN7HtIq" role="2Oq$k0">
+              <ref role="37wK5l" node="52ZKkN7HsWz" resolve="channel" />
+              <node concept="37vLTw" id="52ZKkN7Hu1C" role="37wK5m">
+                <ref role="3cqZAo" node="52ZKkN7HtVU" resolve="channelId" />
+              </node>
             </node>
-            <node concept="liA8E" id="4pw9jmIAc3B" role="2OqNvi">
+            <node concept="liA8E" id="52ZKkN7HtIs" role="2OqNvi">
               <ref role="37wK5l" to="zcvs:~MidiChannel.noteOff(int):void" resolve="noteOff" />
-              <node concept="37vLTw" id="4pw9jmIAc5H" role="37wK5m">
+              <node concept="37vLTw" id="52ZKkN7HtIt" role="37wK5m">
                 <ref role="3cqZAo" node="4pw9jmI$IvW" resolve="key" />
               </node>
             </node>
@@ -393,12 +392,121 @@
       </node>
       <node concept="3Tm1VV" id="4pw9jmI$In6" role="1B3o_S" />
       <node concept="3cqZAl" id="4pw9jmI$Irm" role="3clF45" />
+      <node concept="37vLTG" id="52ZKkN7HtVU" role="3clF46">
+        <property role="TrG5h" value="channelId" />
+        <node concept="10Oyi0" id="52ZKkN7Hu1m" role="1tU5fm" />
+      </node>
       <node concept="37vLTG" id="4pw9jmI$IvW" role="3clF46">
         <property role="TrG5h" value="key" />
         <node concept="10Oyi0" id="4pw9jmI$IvV" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="52ZKkN7HlpU" role="jymVt" />
+    <node concept="3clFb_" id="52ZKkN7HljF" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="programChange" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="52ZKkN7HljI" role="3clF47">
+        <node concept="3clFbJ" id="52ZKkN7Hu6N" role="3cqZAp">
+          <node concept="3clFbS" id="52ZKkN7Hu6O" role="3clFbx">
+            <node concept="3clFbF" id="52ZKkN7Hu6P" role="3cqZAp">
+              <node concept="2OqwBi" id="52ZKkN7Hu6Q" role="3clFbG">
+                <node concept="10M0yZ" id="52ZKkN7Hu6R" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="52ZKkN7Hu6S" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="52ZKkN7Hu6T" role="37wK5m">
+                    <node concept="37vLTw" id="52ZKkN7Hug2" role="3uHU7w">
+                      <ref role="3cqZAo" node="52ZKkN7HlpI" resolve="program" />
+                    </node>
+                    <node concept="3cpWs3" id="52ZKkN7Hu6V" role="3uHU7B">
+                      <node concept="Xl_RD" id="52ZKkN7Hu6W" role="3uHU7w">
+                        <property role="Xl_RC" value=", programChange " />
+                      </node>
+                      <node concept="3cpWs3" id="52ZKkN7Hu6X" role="3uHU7B">
+                        <node concept="Xl_RD" id="52ZKkN7Hu6Y" role="3uHU7B">
+                          <property role="Xl_RC" value="MidiPlayerBase: channel " />
+                        </node>
+                        <node concept="37vLTw" id="52ZKkN7HuqW" role="3uHU7w">
+                          <ref role="3cqZAo" node="52ZKkN7Huhl" resolve="channelId" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="52ZKkN7Hu70" role="3clFbw">
+            <ref role="3cqZAo" node="4pw9jmIAfAL" resolve="verbose" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="52ZKkN7Hu73" role="3cqZAp">
+          <node concept="2OqwBi" id="52ZKkN7Hu74" role="3clFbG">
+            <node concept="1rXfSq" id="52ZKkN7Hu75" role="2Oq$k0">
+              <ref role="37wK5l" node="52ZKkN7HsWz" resolve="channel" />
+              <node concept="37vLTw" id="52ZKkN7Huoe" role="37wK5m">
+                <ref role="3cqZAo" node="52ZKkN7Huhl" resolve="channelId" />
+              </node>
+            </node>
+            <node concept="liA8E" id="52ZKkN7Hu77" role="2OqNvi">
+              <ref role="37wK5l" to="zcvs:~MidiChannel.programChange(int):void" resolve="programChange" />
+              <node concept="37vLTw" id="52ZKkN7Huqi" role="37wK5m">
+                <ref role="3cqZAo" node="52ZKkN7HlpI" resolve="program" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="52ZKkN7Hlce" role="1B3o_S" />
+      <node concept="3cqZAl" id="52ZKkN7Hljk" role="3clF45" />
+      <node concept="37vLTG" id="52ZKkN7Huhl" role="3clF46">
+        <property role="TrG5h" value="channelId" />
+        <node concept="10Oyi0" id="52ZKkN7HunP" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="52ZKkN7HlpI" role="3clF46">
+        <property role="TrG5h" value="program" />
+        <node concept="10Oyi0" id="52ZKkN7HlpH" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="5Su2du4PO6V" role="jymVt" />
+    <node concept="3clFb_" id="52ZKkN7HsWz" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="channel" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="52ZKkN7HsWA" role="3clF47">
+        <node concept="3cpWs6" id="52ZKkN7Htgm" role="3cqZAp">
+          <node concept="AH0OO" id="52ZKkN7Htgn" role="3cqZAk">
+            <node concept="37vLTw" id="52ZKkN7Htgo" role="AHEQo">
+              <ref role="3cqZAo" node="52ZKkN7Ht3T" resolve="id" />
+            </node>
+            <node concept="2OqwBi" id="52ZKkN7Htgp" role="AHHXb">
+              <node concept="37vLTw" id="52ZKkN7Htgq" role="2Oq$k0">
+                <ref role="3cqZAo" node="4pw9jmI$GHD" resolve="synth" />
+              </node>
+              <node concept="liA8E" id="52ZKkN7Htgr" role="2OqNvi">
+                <ref role="37wK5l" to="zcvs:~Synthesizer.getChannels():javax.sound.midi.MidiChannel[]" resolve="getChannels" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="52ZKkN7HsPb" role="1B3o_S" />
+      <node concept="3uibUv" id="52ZKkN7HsWr" role="3clF45">
+        <ref role="3uigEE" to="zcvs:~MidiChannel" resolve="MidiChannel" />
+      </node>
+      <node concept="37vLTG" id="52ZKkN7Ht3T" role="3clF46">
+        <property role="TrG5h" value="id" />
+        <node concept="10Oyi0" id="52ZKkN7Ht3S" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="52ZKkN7Hti3" role="jymVt" />
     <node concept="3clFb_" id="5Su2du4PNQQ" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="delay" />
