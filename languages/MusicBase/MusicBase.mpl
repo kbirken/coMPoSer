@@ -79,9 +79,9 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">45bffef4-dd20-400c-b21b-494af6adf5ac(MusicBase.runtime)</dependency>
-    <dependency reexport="false" scope="generate-into">3938613f-5bdd-4d70-b4ba-479d5eebaf03(Midi)</dependency>
     <dependency reexport="false">b4c83bfc-bf22-4ef3-9539-3d39b490a670(MusicBase)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">ba40c94e-9586-4287-a102-9797dcf5f3db(Midi.runtime)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -129,6 +129,7 @@
     <dependency reexport="false">45bffef4-dd20-400c-b21b-494af6adf5ac(MusicBase.runtime)</dependency>
   </runtime>
   <extendedLanguages>
+    <extendedLanguage>3938613f-5bdd-4d70-b4ba-479d5eebaf03(Midi)</extendedLanguage>
     <extendedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</extendedLanguage>
   </extendedLanguages>
 </language>

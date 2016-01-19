@@ -8,6 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
+    <import index="e2m9" ref="r:726e8c78-944b-4e4c-a772-b49120258764(Midi.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -205,6 +206,25 @@
       <property role="20kJfa" value="playable" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4pw9jmIAqe6" resolve="Playable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="$8H1LjSBtq">
+    <property role="1pbfSe" value="1558915958" />
+    <property role="TrG5h" value="ControlEvent" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="4pw9jmIAqe6" resolve="Playable" />
+  </node>
+  <node concept="1TIwiD" id="$8H1LjSBtr">
+    <property role="1pbfSe" value="1558915959" />
+    <property role="TrG5h" value="InstrumentChange" />
+    <property role="34LRSv" value="instrument" />
+    <ref role="1TJDcQ" node="$8H1LjSBtq" resolve="ControlEvent" />
+    <node concept="1TJgyj" id="$8H1LjU3Yc" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="instrument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="e2m9:$8H1LjRRHt" resolve="Instrument" />
     </node>
   </node>
 </model>

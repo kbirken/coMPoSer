@@ -23,6 +23,10 @@
       <concept id="5818581779098235020" name="Midi.structure.MidiSong" flags="ng" index="2n2z70">
         <child id="5818581779098235021" name="sequence" index="2n2z71" />
       </concept>
+      <concept id="650968179914275677" name="Midi.structure.Instrument" flags="ng" index="1qPWX1" />
+      <concept id="650968179914275674" name="Midi.structure.ProgramChangeEvent" flags="ng" index="1qPWX6">
+        <child id="650968179914297545" name="instrument" index="1qPQjl" />
+      </concept>
       <concept id="5071094092912036368" name="Midi.structure.MidiSequence" flags="ng" index="3CYEW_">
         <property id="5818581779098197001" name="channelId" index="2n2DP5" />
         <child id="5071094092912036448" name="events" index="3CYEXl" />
@@ -583,6 +587,46 @@
                         <ref role="3TtcxE" to="lom3:4pw9jmIAw9l" />
                       </node>
                       <node concept="30H73N" id="$8H1LjRQj0" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="$8H1LjU0ht" role="3acgRq">
+      <ref role="30HIoZ" to="lom3:$8H1LjSBtr" resolve="InstrumentChange" />
+      <node concept="gft3U" id="$8H1LjU0iX" role="1lVwrX">
+        <node concept="1qPWX6" id="$8H1LjU0j3" role="gfFT$">
+          <property role="3CYEXn" value="1" />
+          <node concept="1qPWX1" id="$8H1LjU0j5" role="1qPQjl">
+            <node concept="29HgVG" id="$8H1LjUrai" role="lGtFl">
+              <node concept="3NFfHV" id="$8H1LjUraj" role="3NFExx">
+                <node concept="3clFbS" id="$8H1LjUrak" role="2VODD2">
+                  <node concept="3clFbF" id="$8H1LjUraq" role="3cqZAp">
+                    <node concept="2OqwBi" id="$8H1LjUral" role="3clFbG">
+                      <node concept="3TrEf2" id="$8H1LjUrao" role="2OqNvi">
+                        <ref role="3Tt5mk" to="lom3:$8H1LjU3Yc" />
+                      </node>
+                      <node concept="30H73N" id="$8H1LjUrap" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17Uvod" id="$8H1LjU0jc" role="lGtFl">
+            <property role="P4ACc" value="3938613f-5bdd-4d70-b4ba-479d5eebaf03/5071094092912036420/5071094092912036450" />
+            <property role="2qtEX9" value="time" />
+            <node concept="3zFVjK" id="$8H1LjU0jd" role="3zH0cK">
+              <node concept="3clFbS" id="$8H1LjU0je" role="2VODD2">
+                <node concept="3clFbF" id="$8H1LjU0lX" role="3cqZAp">
+                  <node concept="2OqwBi" id="$8H1LjU0qf" role="3clFbG">
+                    <node concept="30H73N" id="$8H1LjU0lW" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="$8H1LjU0BP" role="2OqNvi">
+                      <ref role="37wK5l" to="4nke:5Su2du4WqPK" resolve="getStartTime" />
                     </node>
                   </node>
                 </node>

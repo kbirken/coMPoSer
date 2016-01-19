@@ -8,9 +8,9 @@
   <imports>
     <import index="e2m9" ref="r:726e8c78-944b-4e4c-a772-b49120258764(Midi.structure)" />
     <import index="zcvs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.sound.midi(JDK/)" />
+    <import index="k7mo" ref="r:7e180329-3d24-4171-aa61-56735a25528b(Midi.runtime)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -82,17 +82,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
-        <child id="1164879758292" name="body" index="SfCbr" />
-        <child id="1164903496223" name="catchClause" index="TEbGg" />
-      </concept>
-      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
-        <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
-      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -102,19 +91,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
-        <child id="1068431790190" name="initializer" index="33vP2m" />
-      </concept>
-      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
-        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
-      </concept>
-      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
-        <child id="5680397130376446158" name="type" index="1tU5fm" />
-      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -122,10 +101,6 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
-      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
-        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
-      </concept>
-      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
@@ -160,21 +135,9 @@
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
-        <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
-        <child id="1151688676805" name="elementType" index="_ZDj9" />
-      </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
-      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
-        <child id="1237721435807" name="elementType" index="HW$YZ" />
-      </concept>
-      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
-      <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
+      <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
     </language>
   </registry>
   <node concept="24kQdi" id="5Su2du4SbLY">
@@ -346,96 +309,18 @@
             </node>
             <node concept="3GJtP1" id="$8H1LjRX43" role="1ou48n">
               <node concept="3clFbS" id="$8H1LjRX44" role="2VODD2">
-                <node concept="SfApY" id="$8H1LjRZHw" role="3cqZAp">
-                  <node concept="TDmWw" id="$8H1LjRZHx" role="TEbGg">
-                    <node concept="3cpWsn" id="$8H1LjRZHy" role="TDEfY">
-                      <property role="TrG5h" value="ex" />
-                      <node concept="3uibUv" id="$8H1LjRZTE" role="1tU5fm">
-                        <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                <node concept="3cpWs6" id="$8H1LjTcfO" role="3cqZAp">
+                  <node concept="2OqwBi" id="$8H1LjTcwd" role="3cqZAk">
+                    <node concept="2OqwBi" id="$8H1LjTcfP" role="2Oq$k0">
+                      <node concept="2YIFZM" id="$8H1LjTcfQ" role="2Oq$k0">
+                        <ref role="37wK5l" to="k7mo:$8H1LjT9mH" resolve="getInstruments" />
+                        <ref role="1Pybhc" to="k7mo:$8H1LjSRVA" resolve="MidiInstrumentProvider" />
                       </node>
+                      <node concept="T8wYR" id="$8H1LjTcfR" role="2OqNvi" />
                     </node>
-                    <node concept="3clFbS" id="$8H1LjRZH$" role="TDEfX">
-                      <node concept="3cpWs6" id="$8H1LjS07Q" role="3cqZAp">
-                        <node concept="2ShNRf" id="$8H1LjS0iY" role="3cqZAk">
-                          <node concept="Tc6Ow" id="$8H1LjS0iU" role="2ShVmc">
-                            <node concept="3uibUv" id="$8H1LjS0iV" role="HW$YZ">
-                              <ref role="3uigEE" to="zcvs:~Instrument" resolve="Instrument" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="$8H1LjRZH_" role="SfCbr">
-                    <node concept="3cpWs8" id="$8H1LjRYoV" role="3cqZAp">
-                      <node concept="3cpWsn" id="$8H1LjRYoW" role="3cpWs9">
-                        <property role="TrG5h" value="synthesizer" />
-                        <node concept="3uibUv" id="$8H1LjRYoU" role="1tU5fm">
-                          <ref role="3uigEE" to="zcvs:~Synthesizer" resolve="Synthesizer" />
-                        </node>
-                        <node concept="2YIFZM" id="$8H1LjRYoX" role="33vP2m">
-                          <ref role="37wK5l" to="zcvs:~MidiSystem.getSynthesizer():javax.sound.midi.Synthesizer" resolve="getSynthesizer" />
-                          <ref role="1Pybhc" to="zcvs:~MidiSystem" resolve="MidiSystem" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="$8H1LjRYyx" role="3cqZAp">
-                      <node concept="2OqwBi" id="$8H1LjRYA4" role="3clFbG">
-                        <node concept="37vLTw" id="$8H1LjRYyv" role="2Oq$k0">
-                          <ref role="3cqZAo" node="$8H1LjRYoW" resolve="synthesizer" />
-                        </node>
-                        <node concept="liA8E" id="$8H1LjRYI_" role="2OqNvi">
-                          <ref role="37wK5l" to="zcvs:~MidiDevice.open():void" resolve="open" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs8" id="$8H1LjSe9h" role="3cqZAp">
-                      <node concept="3cpWsn" id="$8H1LjSe9i" role="3cpWs9">
-                        <property role="TrG5h" value="instruments" />
-                        <node concept="_YKpA" id="$8H1LjSe8Q" role="1tU5fm">
-                          <node concept="3uibUv" id="$8H1LjSe8T" role="_ZDj9">
-                            <ref role="3uigEE" to="zcvs:~Instrument" resolve="Instrument" />
-                          </node>
-                        </node>
-                        <node concept="2OqwBi" id="$8H1LjSe9j" role="33vP2m">
-                          <node concept="2OqwBi" id="$8H1LjSe9k" role="2Oq$k0">
-                            <node concept="2OqwBi" id="$8H1LjSe9l" role="2Oq$k0">
-                              <node concept="2OqwBi" id="$8H1LjSe9m" role="2Oq$k0">
-                                <node concept="37vLTw" id="$8H1LjSe9n" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="$8H1LjRYoW" resolve="synthesizer" />
-                                </node>
-                                <node concept="liA8E" id="$8H1LjSe9o" role="2OqNvi">
-                                  <ref role="37wK5l" to="zcvs:~Synthesizer.getDefaultSoundbank():javax.sound.midi.Soundbank" resolve="getDefaultSoundbank" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="$8H1LjSe9p" role="2OqNvi">
-                                <ref role="37wK5l" to="zcvs:~Soundbank.getInstruments():javax.sound.midi.Instrument[]" resolve="getInstruments" />
-                              </node>
-                            </node>
-                            <node concept="39bAoz" id="$8H1LjSe9q" role="2OqNvi" />
-                          </node>
-                          <node concept="ANE8D" id="$8H1LjSe9r" role="2OqNvi" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="$8H1LjSfb0" role="3cqZAp">
-                      <node concept="2OqwBi" id="$8H1LjSfhx" role="3clFbG">
-                        <node concept="37vLTw" id="$8H1LjSfaY" role="2Oq$k0">
-                          <ref role="3cqZAo" node="$8H1LjRYoW" resolve="synthesizer" />
-                        </node>
-                        <node concept="liA8E" id="$8H1LjSfqG" role="2OqNvi">
-                          <ref role="37wK5l" to="zcvs:~MidiDevice.close():void" resolve="close" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs6" id="$8H1LjSexk" role="3cqZAp">
-                      <node concept="37vLTw" id="$8H1LjSe9s" role="3cqZAk">
-                        <ref role="3cqZAo" node="$8H1LjSe9i" resolve="instruments" />
-                      </node>
-                    </node>
+                    <node concept="ANE8D" id="$8H1LjTcHp" role="2OqNvi" />
                   </node>
                 </node>
-                <node concept="3clFbH" id="$8H1LjS0pd" role="3cqZAp" />
               </node>
             </node>
             <node concept="3uibUv" id="$8H1LjRX8f" role="1eyP2E">
@@ -479,6 +364,12 @@
         </node>
       </node>
       <node concept="l2Vlx" id="$8H1LjRX3C" role="2iSdaV" />
+      <node concept="3F0ifn" id="$8H1LjTp$e" role="3EZMnx">
+        <property role="3F0ifm" value="at" />
+      </node>
+      <node concept="3F0A7n" id="$8H1LjTpCQ" role="3EZMnx">
+        <ref role="1NtTu8" to="e2m9:4pw9jmIACDy" resolve="time" />
+      </node>
     </node>
   </node>
 </model>

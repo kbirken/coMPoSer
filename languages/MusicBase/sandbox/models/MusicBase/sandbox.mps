@@ -10,9 +10,17 @@
     <import index="zcvs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.sound.midi(JDK/)" />
   </imports>
   <registry>
+    <language id="3938613f-5bdd-4d70-b4ba-479d5eebaf03" name="Midi">
+      <concept id="650968179914275677" name="Midi.structure.Instrument" flags="ng" index="1qPWX1">
+        <property id="650968179914275680" name="key" index="1qPWXW" />
+      </concept>
+    </language>
     <language id="b4c83bfc-bf22-4ef3-9539-3d39b490a670" name="MusicBase">
       <concept id="6781867810608813087" name="MusicBase.structure.NamedPlayable" flags="ng" index="3qS9N8">
         <property id="5818581779097529860" name="ticksPerBeat" index="2n5eX8" />
+      </concept>
+      <concept id="650968179914471259" name="MusicBase.structure.InstrumentChange" flags="ng" index="1qUGd7">
+        <child id="650968179914850188" name="instrument" index="1qS8Ig" />
       </concept>
       <concept id="5071094092909402318" name="MusicBase.structure.RawNote" flags="ng" index="3C4BRV">
         <property id="5071094092909448945" name="key" index="3C4MJ4" />
@@ -48,6 +56,11 @@
       <property role="2n5eX8" value="500" />
       <property role="TrG5h" value="S1" />
       <property role="1qP3Hu" value="0" />
+      <node concept="1qUGd7" id="$8H1LjUnYw" role="3CYo5y">
+        <node concept="1qPWX1" id="$8H1LjUs1b" role="1qS8Ig">
+          <property role="1qPWXW" value="22" />
+        </node>
+      </node>
       <node concept="3C4BRV" id="5Su2du4QVOu" role="3CYo5y">
         <property role="3C4MJ4" value="48" />
         <property role="3CYorX" value="500" />
@@ -88,6 +101,11 @@
         </node>
       </node>
       <node concept="3VhmBs" id="6oHN6attBo4" role="3CYo5y" />
+      <node concept="1qUGd7" id="$8H1LjUs$C" role="3CYo5y">
+        <node concept="1qPWX1" id="$8H1LjUtFH" role="1qS8Ig">
+          <property role="1qPWXW" value="8" />
+        </node>
+      </node>
       <node concept="3CYo4e" id="5Su2du4VTUz" role="3CYo5y">
         <property role="2n5eX8" value="500" />
         <property role="TrG5h" value="S3" />
@@ -109,6 +127,11 @@
         <property role="3CYorX" value="2000" />
       </node>
       <node concept="3VhmBs" id="6oHN6attBoS" role="3CYo5y" />
+      <node concept="1qUGd7" id="$8H1LjUsnG" role="3CYo5y">
+        <node concept="1qPWX1" id="$8H1LjUsoi" role="1qS8Ig">
+          <property role="1qPWXW" value="41" />
+        </node>
+      </node>
       <node concept="3C4BRV" id="5Su2du4XTMb" role="3CYo5y">
         <property role="3C4MJ4" value="72" />
         <property role="3CYorX" value="100" />

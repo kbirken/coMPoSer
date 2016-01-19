@@ -1258,5 +1258,39 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="$8H1LjSBuA">
+    <ref role="13h7C2" to="lom3:$8H1LjSBtq" resolve="ControlEvent" />
+    <node concept="13hLZK" id="$8H1LjSBuB" role="13h7CW">
+      <node concept="3clFbS" id="$8H1LjSBuC" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="$8H1LjSBv4" role="13h7CS">
+      <property role="TrG5h" value="transpose" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="5Su2du51FgD" resolve="transpose" />
+      <node concept="3Tm1VV" id="$8H1LjSBv7" role="1B3o_S" />
+      <node concept="3clFbS" id="$8H1LjSBva" role="3clF47" />
+      <node concept="37vLTG" id="$8H1LjSBvb" role="3clF46">
+        <property role="TrG5h" value="delta" />
+        <node concept="10Oyi0" id="$8H1LjSBvc" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="$8H1LjSBvd" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="$8H1LjSBvm" role="13h7CS">
+      <property role="TrG5h" value="getDurationAbs" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="4pw9jmIAqiq" resolve="getDurationAbs" />
+      <node concept="3Tm1VV" id="$8H1LjSBvn" role="1B3o_S" />
+      <node concept="3clFbS" id="$8H1LjSBvq" role="3clF47">
+        <node concept="3clFbF" id="$8H1LjSBvB" role="3cqZAp">
+          <node concept="3cmrfG" id="$8H1LjSBvA" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="$8H1LjSBvr" role="3clF45" />
+    </node>
+  </node>
 </model>
 
