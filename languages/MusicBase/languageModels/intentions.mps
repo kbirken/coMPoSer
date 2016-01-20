@@ -33,6 +33,7 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -311,6 +312,256 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="70KD1tEoTre">
+    <property role="TrG5h" value="scaleDurationsX2" />
+    <ref role="2ZfgGC" to="lom3:4pw9jmIAqgV" resolve="Sequence" />
+    <node concept="2S6ZIM" id="70KD1tEoTrf" role="2ZfVej">
+      <node concept="3clFbS" id="70KD1tEoTrg" role="2VODD2">
+        <node concept="3clFbF" id="70KD1tEoTsM" role="3cqZAp">
+          <node concept="Xl_RD" id="70KD1tEoTsL" role="3clFbG">
+            <property role="Xl_RC" value="Scale Durations x2" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="70KD1tEoTJR" role="2ZfVeh">
+      <node concept="3clFbS" id="70KD1tEoTJS" role="2VODD2">
+        <node concept="3clFbF" id="70KD1tEoTKZ" role="3cqZAp">
+          <node concept="1Wc70l" id="70KD1tEoTL1" role="3clFbG">
+            <node concept="2OqwBi" id="70KD1tEoTL2" role="3uHU7w">
+              <node concept="3GX2aA" id="70KD1tEoTL3" role="2OqNvi" />
+              <node concept="2OqwBi" id="70KD1tEoTL4" role="2Oq$k0">
+                <node concept="2Sf5sV" id="70KD1tEoTL5" role="2Oq$k0" />
+                <node concept="2qgKlT" id="70KD1tEoTL6" role="2OqNvi">
+                  <ref role="37wK5l" to="4nke:$8H1LjXHoO" resolve="getSounds" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOSWO" id="70KD1tEoTL7" role="3uHU7B">
+              <node concept="3cmrfG" id="70KD1tEoTL8" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="70KD1tEoTL9" role="3uHU7B">
+                <node concept="2Sf5sV" id="70KD1tEoTLa" role="2Oq$k0" />
+                <node concept="3TrcHB" id="70KD1tEoTLb" role="2OqNvi">
+                  <ref role="3TsBF5" to="lom3:52ZKkN7EMS4" resolve="ticksPerBeat" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="70KD1tEoU6C" role="2ZfgGD">
+      <node concept="3clFbS" id="70KD1tEoU6D" role="2VODD2">
+        <node concept="3cpWs8" id="70KD1tEoU6E" role="3cqZAp">
+          <node concept="3cpWsn" id="70KD1tEoU6F" role="3cpWs9">
+            <property role="TrG5h" value="factor" />
+            <node concept="10Oyi0" id="70KD1tEoU6G" role="1tU5fm" />
+            <node concept="3cmrfG" id="70KD1tEoUtc" role="33vP2m">
+              <property role="3cmrfH" value="2" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="70KD1tEoU6K" role="3cqZAp" />
+        <node concept="3SKdUt" id="70KD1tEoU6L" role="3cqZAp">
+          <node concept="3SKdUq" id="70KD1tEoU6M" role="3SKWNk">
+            <property role="3SKdUp" value="scale ticksPerBeat of this sequence" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="70KD1tEoU6N" role="3cqZAp">
+          <node concept="37vLTI" id="70KD1tEoU6O" role="3clFbG">
+            <node concept="17qRlL" id="70KD1tEoUxZ" role="37vLTx">
+              <node concept="2OqwBi" id="70KD1tEoU6R" role="3uHU7B">
+                <node concept="2Sf5sV" id="70KD1tEoU6S" role="2Oq$k0" />
+                <node concept="3TrcHB" id="70KD1tEoU6T" role="2OqNvi">
+                  <ref role="3TsBF5" to="lom3:52ZKkN7EMS4" resolve="ticksPerBeat" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="70KD1tEoU6Q" role="3uHU7w">
+                <ref role="3cqZAo" node="70KD1tEoU6F" resolve="factor" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="70KD1tEoU6U" role="37vLTJ">
+              <node concept="2Sf5sV" id="70KD1tEoU6V" role="2Oq$k0" />
+              <node concept="3TrcHB" id="70KD1tEoU6W" role="2OqNvi">
+                <ref role="3TsBF5" to="lom3:52ZKkN7EMS4" resolve="ticksPerBeat" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="70KD1tEoU6X" role="3cqZAp" />
+        <node concept="3SKdUt" id="70KD1tEoU6Y" role="3cqZAp">
+          <node concept="3SKdUq" id="70KD1tEoU6Z" role="3SKWNk">
+            <property role="3SKdUp" value="scale durations of all Sound objects in this sequence" />
+          </node>
+        </node>
+        <node concept="2Gpval" id="70KD1tEoU70" role="3cqZAp">
+          <node concept="2GrKxI" id="70KD1tEoU71" role="2Gsz3X">
+            <property role="TrG5h" value="n" />
+          </node>
+          <node concept="3clFbS" id="70KD1tEoU72" role="2LFqv$">
+            <node concept="3clFbF" id="70KD1tEoU73" role="3cqZAp">
+              <node concept="37vLTI" id="70KD1tEoU74" role="3clFbG">
+                <node concept="17qRlL" id="70KD1tEoU_$" role="37vLTx">
+                  <node concept="2OqwBi" id="70KD1tEoU77" role="3uHU7B">
+                    <node concept="2GrUjf" id="70KD1tEoU78" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="70KD1tEoU71" resolve="n" />
+                    </node>
+                    <node concept="3TrcHB" id="70KD1tEoU79" role="2OqNvi">
+                      <ref role="3TsBF5" to="lom3:4pw9jmIAqf8" resolve="duration" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="70KD1tEoU76" role="3uHU7w">
+                    <ref role="3cqZAo" node="70KD1tEoU6F" resolve="factor" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="70KD1tEoU7a" role="37vLTJ">
+                  <node concept="2GrUjf" id="70KD1tEoU7b" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="70KD1tEoU71" resolve="n" />
+                  </node>
+                  <node concept="3TrcHB" id="70KD1tEoU7c" role="2OqNvi">
+                    <ref role="3TsBF5" to="lom3:4pw9jmIAqf8" resolve="duration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="70KD1tEoU7d" role="2GsD0m">
+            <node concept="2Sf5sV" id="70KD1tEoU7e" role="2Oq$k0" />
+            <node concept="2qgKlT" id="70KD1tEoU7f" role="2OqNvi">
+              <ref role="37wK5l" to="4nke:$8H1LjXHoO" resolve="getSounds" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="70KD1tEp5Qr">
+    <property role="TrG5h" value="scaleDurationsX3" />
+    <ref role="2ZfgGC" to="lom3:4pw9jmIAqgV" resolve="Sequence" />
+    <node concept="2S6ZIM" id="70KD1tEp5Qs" role="2ZfVej">
+      <node concept="3clFbS" id="70KD1tEp5Qt" role="2VODD2">
+        <node concept="3clFbF" id="70KD1tEp5Qu" role="3cqZAp">
+          <node concept="Xl_RD" id="70KD1tEp5Qv" role="3clFbG">
+            <property role="Xl_RC" value="Scale Durations x3" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="70KD1tEp5Qw" role="2ZfVeh">
+      <node concept="3clFbS" id="70KD1tEp5Qx" role="2VODD2">
+        <node concept="3clFbF" id="70KD1tEp5Qy" role="3cqZAp">
+          <node concept="1Wc70l" id="70KD1tEp5Qz" role="3clFbG">
+            <node concept="2OqwBi" id="70KD1tEp5Q$" role="3uHU7w">
+              <node concept="3GX2aA" id="70KD1tEp5Q_" role="2OqNvi" />
+              <node concept="2OqwBi" id="70KD1tEp5QA" role="2Oq$k0">
+                <node concept="2Sf5sV" id="70KD1tEp5QB" role="2Oq$k0" />
+                <node concept="2qgKlT" id="70KD1tEp5QC" role="2OqNvi">
+                  <ref role="37wK5l" to="4nke:$8H1LjXHoO" resolve="getSounds" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOSWO" id="70KD1tEp5QD" role="3uHU7B">
+              <node concept="3cmrfG" id="70KD1tEp5QE" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="70KD1tEp5QF" role="3uHU7B">
+                <node concept="2Sf5sV" id="70KD1tEp5QG" role="2Oq$k0" />
+                <node concept="3TrcHB" id="70KD1tEp5QH" role="2OqNvi">
+                  <ref role="3TsBF5" to="lom3:52ZKkN7EMS4" resolve="ticksPerBeat" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="70KD1tEp5QI" role="2ZfgGD">
+      <node concept="3clFbS" id="70KD1tEp5QJ" role="2VODD2">
+        <node concept="3cpWs8" id="70KD1tEp5QK" role="3cqZAp">
+          <node concept="3cpWsn" id="70KD1tEp5QL" role="3cpWs9">
+            <property role="TrG5h" value="factor" />
+            <node concept="10Oyi0" id="70KD1tEp5QM" role="1tU5fm" />
+            <node concept="3cmrfG" id="70KD1tEp5QN" role="33vP2m">
+              <property role="3cmrfH" value="3" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="70KD1tEp5QO" role="3cqZAp" />
+        <node concept="3SKdUt" id="70KD1tEp5QP" role="3cqZAp">
+          <node concept="3SKdUq" id="70KD1tEp5QQ" role="3SKWNk">
+            <property role="3SKdUp" value="scale ticksPerBeat of this sequence" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="70KD1tEp5QR" role="3cqZAp">
+          <node concept="37vLTI" id="70KD1tEp5QS" role="3clFbG">
+            <node concept="17qRlL" id="70KD1tEp5QT" role="37vLTx">
+              <node concept="2OqwBi" id="70KD1tEp5QU" role="3uHU7B">
+                <node concept="2Sf5sV" id="70KD1tEp5QV" role="2Oq$k0" />
+                <node concept="3TrcHB" id="70KD1tEp5QW" role="2OqNvi">
+                  <ref role="3TsBF5" to="lom3:52ZKkN7EMS4" resolve="ticksPerBeat" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="70KD1tEp5QX" role="3uHU7w">
+                <ref role="3cqZAo" node="70KD1tEp5QL" resolve="factor" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="70KD1tEp5QY" role="37vLTJ">
+              <node concept="2Sf5sV" id="70KD1tEp5QZ" role="2Oq$k0" />
+              <node concept="3TrcHB" id="70KD1tEp5R0" role="2OqNvi">
+                <ref role="3TsBF5" to="lom3:52ZKkN7EMS4" resolve="ticksPerBeat" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="70KD1tEp5R1" role="3cqZAp" />
+        <node concept="3SKdUt" id="70KD1tEp5R2" role="3cqZAp">
+          <node concept="3SKdUq" id="70KD1tEp5R3" role="3SKWNk">
+            <property role="3SKdUp" value="scale durations of all Sound objects in this sequence" />
+          </node>
+        </node>
+        <node concept="2Gpval" id="70KD1tEp5R4" role="3cqZAp">
+          <node concept="2GrKxI" id="70KD1tEp5R5" role="2Gsz3X">
+            <property role="TrG5h" value="n" />
+          </node>
+          <node concept="3clFbS" id="70KD1tEp5R6" role="2LFqv$">
+            <node concept="3clFbF" id="70KD1tEp5R7" role="3cqZAp">
+              <node concept="37vLTI" id="70KD1tEp5R8" role="3clFbG">
+                <node concept="17qRlL" id="70KD1tEp5R9" role="37vLTx">
+                  <node concept="2OqwBi" id="70KD1tEp5Ra" role="3uHU7B">
+                    <node concept="2GrUjf" id="70KD1tEp5Rb" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="70KD1tEp5R5" resolve="n" />
+                    </node>
+                    <node concept="3TrcHB" id="70KD1tEp5Rc" role="2OqNvi">
+                      <ref role="3TsBF5" to="lom3:4pw9jmIAqf8" resolve="duration" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="70KD1tEp5Rd" role="3uHU7w">
+                    <ref role="3cqZAo" node="70KD1tEp5QL" resolve="factor" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="70KD1tEp5Re" role="37vLTJ">
+                  <node concept="2GrUjf" id="70KD1tEp5Rf" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="70KD1tEp5R5" resolve="n" />
+                  </node>
+                  <node concept="3TrcHB" id="70KD1tEp5Rg" role="2OqNvi">
+                    <ref role="3TsBF5" to="lom3:4pw9jmIAqf8" resolve="duration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="70KD1tEp5Rh" role="2GsD0m">
+            <node concept="2Sf5sV" id="70KD1tEp5Ri" role="2Oq$k0" />
+            <node concept="2qgKlT" id="70KD1tEp5Rj" role="2OqNvi">
+              <ref role="37wK5l" to="4nke:$8H1LjXHoO" resolve="getSounds" />
             </node>
           </node>
         </node>
