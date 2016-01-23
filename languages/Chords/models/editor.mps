@@ -17,6 +17,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
@@ -26,9 +27,11 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414999511" name="jetbrains.mps.lang.editor.structure.UnderlinedStyleClassItem" flags="ln" index="VQ3r3" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -155,6 +158,38 @@
         <ref role="1NtTu8" to="lom3:4pw9jmIAqf8" resolve="duration" />
       </node>
       <node concept="l2Vlx" id="7b0Nh9S4FYj" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7b0Nh9S7K3k">
+    <ref role="1XX52x" to="oenx:7b0Nh9S7CMe" resolve="SmartChordAttribute" />
+    <node concept="3EZMnI" id="7b0Nh9S8LzM" role="2wV5jI">
+      <node concept="2SsqMj" id="7b0Nh9S8LzT" role="3EZMnx" />
+      <node concept="2iRfu4" id="7b0Nh9S8LzP" role="2iSdaV" />
+      <node concept="3F0ifn" id="7b0Nh9S8L$d" role="3EZMnx">
+        <property role="3F0ifm" value="smart chords" />
+      </node>
+      <node concept="3F0ifn" id="7b0Nh9S8L$l" role="3EZMnx">
+        <property role="3F0ifm" value="min" />
+      </node>
+      <node concept="3F0A7n" id="7b0Nh9S8L$v" role="3EZMnx">
+        <ref role="1NtTu8" to="oenx:7b0Nh9S7LQv" resolve="minInterval" />
+      </node>
+      <node concept="VQ3r3" id="7b0Nh9S8Nc3" role="3F10Kt" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5nhEyJqUL2Q">
+    <ref role="1XX52x" to="oenx:78Fn0tqvTNc" resolve="DominantNinth" />
+    <node concept="3EZMnI" id="5nhEyJqUL2S" role="2wV5jI">
+      <node concept="3F1sOY" id="5nhEyJqUL2Z" role="3EZMnx">
+        <ref role="1NtTu8" to="oenx:70KD1tEpdEt" />
+      </node>
+      <node concept="3F0ifn" id="5nhEyJqUL35" role="3EZMnx">
+        <property role="3F0ifm" value="79" />
+        <node concept="11L4FC" id="5nhEyJqUL4L" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5nhEyJqUL2V" role="2iSdaV" />
     </node>
   </node>
 </model>

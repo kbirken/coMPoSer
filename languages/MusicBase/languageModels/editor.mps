@@ -39,6 +39,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
         <child id="1223387335081" name="query" index="3n$kyP" />
@@ -559,6 +560,16 @@
         </node>
       </node>
       <node concept="2iRfu4" id="$8H1LjSBwp" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7b0Nh9S7bmq">
+    <ref role="1XX52x" to="lom3:7b0Nh9S7blX" resolve="DurationAttribute" />
+    <node concept="3EZMnI" id="7b0Nh9S7bms" role="2wV5jI">
+      <node concept="2SsqMj" id="7b0Nh9S7bmz" role="3EZMnx" />
+      <node concept="3F0ifn" id="7b0Nh9S7c1R" role="3EZMnx">
+        <property role="3F0ifm" value="hugo" />
+      </node>
+      <node concept="l2Vlx" id="7b0Nh9S7bmv" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -11,6 +11,7 @@
       <modulePath path="$PROJECT_DIR$/languages/MusicBase/runtime/MusicBase.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/MusicBase/sandbox/MusicBase.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Chords.sandbox/Chords.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExampleSongs/ExampleSongs.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/JavaTests/JavaTests.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Midi.runtime/Midi.runtime.msd" folder="" />
     </projectModules>
