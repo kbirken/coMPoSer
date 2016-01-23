@@ -325,7 +325,7 @@
       <node concept="3clFbS" id="70KD1tEoTrg" role="2VODD2">
         <node concept="3clFbF" id="70KD1tEoTsM" role="3cqZAp">
           <node concept="Xl_RD" id="70KD1tEoTsL" role="3clFbG">
-            <property role="Xl_RC" value="Scale Durations x2" />
+            <property role="Xl_RC" value="Scale Durations (factor 2)" />
           </node>
         </node>
       </node>
@@ -450,7 +450,7 @@
       <node concept="3clFbS" id="70KD1tEp5Qt" role="2VODD2">
         <node concept="3clFbF" id="70KD1tEp5Qu" role="3cqZAp">
           <node concept="Xl_RD" id="70KD1tEp5Qv" role="3clFbG">
-            <property role="Xl_RC" value="Scale Durations x3" />
+            <property role="Xl_RC" value="Scale Durations (factor 3)" />
           </node>
         </node>
       </node>

@@ -418,7 +418,7 @@
         <node concept="3clFbF" id="52ZKkN7EY8V" role="3cqZAp">
           <node concept="37vLTI" id="52ZKkN7EYzB" role="3clFbG">
             <node concept="3cmrfG" id="52ZKkN7EYzT" role="37vLTx">
-              <property role="3cmrfH" value="1000" />
+              <property role="3cmrfH" value="24" />
             </node>
             <node concept="2OqwBi" id="52ZKkN7EYaS" role="37vLTJ">
               <node concept="13iPFW" id="52ZKkN7EY8U" role="2Oq$k0" />
