@@ -28,6 +28,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -116,7 +117,7 @@
     <property role="34LRSv" value="sequence" />
     <property role="R4oN_" value="a sequence of musical entities" />
     <property role="1pbfSe" value="184956560" />
-    <ref role="1TJDcQ" node="5Su2du4ZDgv" resolve="NamedPlayable" />
+    <ref role="1TJDcQ" node="cthwLbbG0A" resolve="PlayableContainer" />
     <node concept="1TJgyi" id="$8H1LjR8X2" role="1TKVEl">
       <property role="TrG5h" value="channelId" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -131,7 +132,7 @@
   <node concept="1TIwiD" id="4pw9jmIAw8T">
     <property role="TrG5h" value="Multiple" />
     <property role="1pbfSe" value="184932498" />
-    <ref role="1TJDcQ" node="5Su2du4ZDgv" resolve="NamedPlayable" />
+    <ref role="1TJDcQ" node="cthwLbbG0A" resolve="PlayableContainer" />
     <node concept="1TJgyj" id="4pw9jmIAw9l" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="items" />
@@ -217,6 +218,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4pw9jmIAqe6" resolve="Playable" />
     </node>
+    <node concept="PrWs8" id="cthwLbbW6g" role="PzmwI">
+      <ref role="PrY4T" node="cthwLbbVC_" resolve="ICanShowDuration" />
+    </node>
   </node>
   <node concept="1TIwiD" id="$8H1LjSBtq">
     <property role="1pbfSe" value="1558915958" />
@@ -247,10 +251,20 @@
         <ref role="trN6q" node="4pw9jmIAqe6" resolve="Playable" />
       </node>
     </node>
-    <node concept="1TJgyi" id="7b0Nh9S7mfb" role="1TKVEl">
-      <property role="TrG5h" value="durationAbs" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+  </node>
+  <node concept="1TIwiD" id="cthwLbbG0A">
+    <property role="1pbfSe" value="1313605170" />
+    <property role="TrG5h" value="PlayableContainer" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5Su2du4ZDgv" resolve="NamedPlayable" />
+    <node concept="PrWs8" id="cthwLbbW6e" role="PzmwI">
+      <ref role="PrY4T" node="cthwLbbVC_" resolve="ICanShowDuration" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="cthwLbbVC_">
+    <property role="1pbfSe" value="1313669169" />
+    <property role="TrG5h" value="ICanShowDuration" />
   </node>
 </model>
 

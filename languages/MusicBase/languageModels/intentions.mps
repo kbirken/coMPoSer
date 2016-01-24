@@ -3,11 +3,16 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="lom3" ref="r:2c1687dc-3d5e-41c6-abc7-78839b701c42(MusicBase.structure)" />
-    <import index="4nke" ref="r:c4b3bded-e0d6-4c0b-806c-5c25909bd08d(MusicBase.behavior)" implicit="true" />
+    <import index="4nke" ref="r:c4b3bded-e0d6-4c0b-806c-5c25909bd08d(MusicBase.behavior)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -48,6 +53,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -57,8 +65,12 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -562,6 +574,95 @@
             <node concept="2Sf5sV" id="70KD1tEp5Ri" role="2Oq$k0" />
             <node concept="2qgKlT" id="70KD1tEp5Rj" role="2OqNvi">
               <ref role="37wK5l" to="4nke:$8H1LjXHoO" resolve="getSounds" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="cthwLbbBD6">
+    <property role="TrG5h" value="showChildDurations" />
+    <ref role="2ZfgGC" to="lom3:cthwLbbG0A" resolve="PlayableContainer" />
+    <node concept="2S6ZIM" id="cthwLbbBD7" role="2ZfVej">
+      <node concept="3clFbS" id="cthwLbbBD8" role="2VODD2">
+        <node concept="3clFbF" id="cthwLbbBE_" role="3cqZAp">
+          <node concept="Xl_RD" id="cthwLbbBE$" role="3clFbG">
+            <property role="Xl_RC" value="Show Durations" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="cthwLbbBD9" role="2ZfgGD">
+      <node concept="3clFbS" id="cthwLbbBDa" role="2VODD2">
+        <node concept="3clFbF" id="cthwLbbJos" role="3cqZAp">
+          <node concept="2OqwBi" id="cthwLbbJr4" role="3clFbG">
+            <node concept="2Sf5sV" id="cthwLbbJoq" role="2Oq$k0" />
+            <node concept="2qgKlT" id="cthwLbbJB0" role="2OqNvi">
+              <ref role="37wK5l" to="4nke:cthwLbbDXz" resolve="showChildDurations" />
+              <node concept="3clFbT" id="cthwLbbJCw" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="cthwLbckwr" role="3cqZAp">
+          <node concept="3SKdUq" id="cthwLbckwt" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: restore previous editor selection" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="cthwLbc64w" role="2ZfVeh">
+      <node concept="3clFbS" id="cthwLbc64x" role="2VODD2">
+        <node concept="3clFbF" id="cthwLbc67g" role="3cqZAp">
+          <node concept="3fqX7Q" id="cthwLbc6sA" role="3clFbG">
+            <node concept="2OqwBi" id="cthwLbc6sC" role="3fr31v">
+              <node concept="2Sf5sV" id="cthwLbc6sD" role="2Oq$k0" />
+              <node concept="2qgKlT" id="cthwLbc6sE" role="2OqNvi">
+                <ref role="37wK5l" to="4nke:cthwLbbVAj" resolve="isChildDurationVisible" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="cthwLbbN3b">
+    <property role="TrG5h" value="hideChildDurations" />
+    <ref role="2ZfgGC" to="lom3:cthwLbbG0A" resolve="PlayableContainer" />
+    <node concept="2S6ZIM" id="cthwLbbN3c" role="2ZfVej">
+      <node concept="3clFbS" id="cthwLbbN3d" role="2VODD2">
+        <node concept="3clFbF" id="cthwLbbN51" role="3cqZAp">
+          <node concept="Xl_RD" id="cthwLbbN50" role="3clFbG">
+            <property role="Xl_RC" value="Hide Durations" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="cthwLbbN3e" role="2ZfgGD">
+      <node concept="3clFbS" id="cthwLbbN3f" role="2VODD2">
+        <node concept="3clFbF" id="cthwLbbP0p" role="3cqZAp">
+          <node concept="2OqwBi" id="cthwLbbP2L" role="3clFbG">
+            <node concept="2Sf5sV" id="cthwLbbP0o" role="2Oq$k0" />
+            <node concept="2qgKlT" id="cthwLbbPdV" role="2OqNvi">
+              <ref role="37wK5l" to="4nke:cthwLbbDXz" resolve="showChildDurations" />
+              <node concept="3clFbT" id="cthwLbbPfr" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="cthwLbbN9t" role="2ZfVeh">
+      <node concept="3clFbS" id="cthwLbbN9u" role="2VODD2">
+        <node concept="3clFbF" id="cthwLbc6Bs" role="3cqZAp">
+          <node concept="3fqX7Q" id="cthwLbc6WN" role="3clFbG">
+            <node concept="2OqwBi" id="cthwLbc6WP" role="3fr31v">
+              <node concept="2Sf5sV" id="cthwLbc6WQ" role="2Oq$k0" />
+              <node concept="2qgKlT" id="cthwLbc6WR" role="2OqNvi">
+                <ref role="37wK5l" to="4nke:cthwLbc5x9" resolve="isChildDurationHidden" />
+              </node>
             </node>
           </node>
         </node>
