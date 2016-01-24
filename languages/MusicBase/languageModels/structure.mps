@@ -227,6 +227,7 @@
     <property role="TrG5h" value="ControlEvent" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="velocity" />
     <ref role="1TJDcQ" node="4pw9jmIAqe6" resolve="Playable" />
   </node>
   <node concept="1TIwiD" id="$8H1LjSBtr">
@@ -265,6 +266,16 @@
   <node concept="PlHQZ" id="cthwLbbVC_">
     <property role="1pbfSe" value="1313669169" />
     <property role="TrG5h" value="ICanShowDuration" />
+  </node>
+  <node concept="1TIwiD" id="cthwLbcUGh">
+    <property role="1pbfSe" value="1313927453" />
+    <property role="TrG5h" value="SetVelocity" />
+    <property role="34LRSv" value="velocity" />
+    <ref role="1TJDcQ" node="$8H1LjSBtq" resolve="ControlEvent" />
+    <node concept="1TJgyi" id="cthwLbcUGi" role="1TKVEl">
+      <property role="TrG5h" value="velocity" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 

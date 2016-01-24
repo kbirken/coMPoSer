@@ -679,5 +679,17 @@
       <node concept="2SsqMj" id="cthwLbcyaD" role="3EZMnx" />
     </node>
   </node>
+  <node concept="24kQdi" id="cthwLbcUHK">
+    <ref role="1XX52x" to="lom3:cthwLbcUGh" resolve="SetVelocity" />
+    <node concept="3EZMnI" id="cthwLbcUHM" role="2wV5jI">
+      <node concept="PMmxH" id="cthwLbcUHT" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="l2Vlx" id="cthwLbcUHP" role="2iSdaV" />
+      <node concept="3F0A7n" id="cthwLbcUHY" role="3EZMnx">
+        <ref role="1NtTu8" to="lom3:cthwLbcUGi" resolve="velocity" />
+      </node>
+    </node>
+  </node>
 </model>
 

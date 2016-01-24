@@ -120,6 +120,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -197,6 +200,23 @@
       <node concept="10P_77" id="4pw9jmIAfAv" role="1tU5fm" />
       <node concept="3clFbT" id="4pw9jmIAfH1" role="33vP2m">
         <property role="3clFbU" value="false" />
+      </node>
+    </node>
+    <node concept="312cEg" id="cthwLbcJyB" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="channelVelocity" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3rvAFt" id="cthwLbcJra" role="1tU5fm">
+        <node concept="10Oyi0" id="cthwLbcJy$" role="3rvSg0" />
+        <node concept="10Oyi0" id="cthwLbcJyx" role="3rvQeY" />
+      </node>
+      <node concept="3Tm6S6" id="cthwLbcJE1" role="1B3o_S" />
+      <node concept="2ShNRf" id="cthwLbcJFB" role="33vP2m">
+        <node concept="3rGOSV" id="cthwLbcJFu" role="2ShVmc">
+          <node concept="10Oyi0" id="cthwLbcJFv" role="3rHrn6" />
+          <node concept="10Oyi0" id="cthwLbcJFw" role="3rHtpV" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="$8H1LjSRgZ" role="jymVt" />
@@ -356,8 +376,11 @@
               <node concept="37vLTw" id="52ZKkN7HtDK" role="37wK5m">
                 <ref role="3cqZAo" node="4pw9jmI$I3u" resolve="key" />
               </node>
-              <node concept="3cmrfG" id="52ZKkN7HtEW" role="37wK5m">
-                <property role="3cmrfH" value="127" />
+              <node concept="1rXfSq" id="cthwLbcL2E" role="37wK5m">
+                <ref role="37wK5l" node="cthwLbcJVe" resolve="getVelocity" />
+                <node concept="37vLTw" id="cthwLbcL3G" role="37wK5m">
+                  <ref role="3cqZAo" node="52ZKkN7Hq50" resolve="channelId" />
+                </node>
               </node>
             </node>
           </node>
@@ -518,6 +541,70 @@
         <node concept="10Oyi0" id="52ZKkN7HlpH" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="cthwLbcL4o" role="jymVt" />
+    <node concept="3clFb_" id="cthwLbcLzu" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setVelocity" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="cthwLbcLzx" role="3clF47">
+        <node concept="3clFbF" id="cthwLbcLIo" role="3cqZAp">
+          <node concept="2OqwBi" id="cthwLbcLIl" role="3clFbG">
+            <node concept="10M0yZ" id="cthwLbcLIm" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="cthwLbcLIn" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="cthwLbcMa5" role="37wK5m">
+                <node concept="37vLTw" id="cthwLbcMeI" role="3uHU7w">
+                  <ref role="3cqZAo" node="cthwLbcLHO" resolve="velocity" />
+                </node>
+                <node concept="3cpWs3" id="cthwLbcLWz" role="3uHU7B">
+                  <node concept="3cpWs3" id="cthwLbcLRp" role="3uHU7B">
+                    <node concept="Xl_RD" id="cthwLbcLJv" role="3uHU7B">
+                      <property role="Xl_RC" value="MidiPlayerBase: channel " />
+                    </node>
+                    <node concept="37vLTw" id="cthwLbcLSL" role="3uHU7w">
+                      <ref role="3cqZAo" node="cthwLbcLHI" resolve="channelId" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="cthwLbcLWK" role="3uHU7w">
+                    <property role="Xl_RC" value=", velocity " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="cthwLbcMhQ" role="3cqZAp">
+          <node concept="37vLTI" id="cthwLbcMyx" role="3clFbG">
+            <node concept="37vLTw" id="cthwLbcMAn" role="37vLTx">
+              <ref role="3cqZAo" node="cthwLbcLHO" resolve="velocity" />
+            </node>
+            <node concept="3EllGN" id="cthwLbcMlU" role="37vLTJ">
+              <node concept="37vLTw" id="cthwLbcMuN" role="3ElVtu">
+                <ref role="3cqZAo" node="cthwLbcLHI" resolve="channelId" />
+              </node>
+              <node concept="37vLTw" id="cthwLbcMhO" role="3ElQJh">
+                <ref role="3cqZAo" node="cthwLbcJyB" resolve="channelVelocity" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="cthwLbcLoD" role="1B3o_S" />
+      <node concept="3cqZAl" id="cthwLbcLzo" role="3clF45" />
+      <node concept="37vLTG" id="cthwLbcLHI" role="3clF46">
+        <property role="TrG5h" value="channelId" />
+        <node concept="10Oyi0" id="cthwLbcLHH" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="cthwLbcLHO" role="3clF46">
+        <property role="TrG5h" value="velocity" />
+        <node concept="10Oyi0" id="cthwLbcLHY" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="5Su2du4PO6V" role="jymVt" />
     <node concept="3clFb_" id="52ZKkN7HsWz" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -601,6 +688,62 @@
         <property role="TrG5h" value="duration" />
         <node concept="10Oyi0" id="5Su2du4PNXy" role="1tU5fm" />
       </node>
+    </node>
+    <node concept="3clFb_" id="cthwLbcJVe" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getVelocity" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="cthwLbcJVh" role="3clF47">
+        <node concept="3clFbJ" id="cthwLbcKbF" role="3cqZAp">
+          <node concept="3clFbS" id="cthwLbcKbG" role="3clFbx">
+            <node concept="3clFbF" id="cthwLbcKr2" role="3cqZAp">
+              <node concept="37vLTI" id="cthwLbcKGO" role="3clFbG">
+                <node concept="3cmrfG" id="cthwLbcKI7" role="37vLTx">
+                  <property role="3cmrfH" value="127" />
+                </node>
+                <node concept="3EllGN" id="cthwLbcK_j" role="37vLTJ">
+                  <node concept="37vLTw" id="cthwLbcKBT" role="3ElVtu">
+                    <ref role="3cqZAo" node="cthwLbcK2F" resolve="channelId" />
+                  </node>
+                  <node concept="37vLTw" id="cthwLbcKr1" role="3ElQJh">
+                    <ref role="3cqZAo" node="cthwLbcJyB" resolve="channelVelocity" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="cthwLbcKNQ" role="3clFbw">
+            <node concept="2OqwBi" id="cthwLbcKNS" role="3fr31v">
+              <node concept="37vLTw" id="cthwLbcKNT" role="2Oq$k0">
+                <ref role="3cqZAo" node="cthwLbcJyB" resolve="channelVelocity" />
+              </node>
+              <node concept="2Nt0df" id="cthwLbcKNU" role="2OqNvi">
+                <node concept="37vLTw" id="cthwLbcKNV" role="38cxEo">
+                  <ref role="3cqZAo" node="cthwLbcK2F" resolve="channelId" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="cthwLbcKSI" role="3cqZAp">
+          <node concept="3EllGN" id="cthwLbcKYx" role="3clFbG">
+            <node concept="37vLTw" id="cthwLbcL13" role="3ElVtu">
+              <ref role="3cqZAo" node="cthwLbcK2F" resolve="channelId" />
+            </node>
+            <node concept="37vLTw" id="cthwLbcKSG" role="3ElQJh">
+              <ref role="3cqZAo" node="cthwLbcJyB" resolve="channelVelocity" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="cthwLbcJNO" role="3clF45" />
+      <node concept="37vLTG" id="cthwLbcK2F" role="3clF46">
+        <property role="TrG5h" value="channelId" />
+        <node concept="10Oyi0" id="cthwLbcK2E" role="1tU5fm" />
+      </node>
+      <node concept="3Tm6S6" id="cthwLbcK7b" role="1B3o_S" />
     </node>
   </node>
   <node concept="312cEu" id="$8H1LjSRVA">

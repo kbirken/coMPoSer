@@ -91,10 +91,6 @@
     <property role="TrG5h" value="NoteOnEvent" />
     <property role="1pbfSe" value="184897537" />
     <ref role="1TJDcQ" node="4pw9jmIACDW" resolve="NoteEvent" />
-    <node concept="1TJgyi" id="4pw9jmIACFA" role="1TKVEl">
-      <property role="TrG5h" value="velocity" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4pw9jmIACFK">
     <property role="TrG5h" value="NoteOffEvent" />
@@ -148,6 +144,15 @@
     </node>
     <node concept="1TJgyi" id="$8H1LjRRHw" role="1TKVEl">
       <property role="TrG5h" value="key" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="cthwLbcMBC">
+    <property role="1pbfSe" value="1313894388" />
+    <property role="TrG5h" value="VelocityEvent" />
+    <ref role="1TJDcQ" node="4pw9jmIACD4" resolve="MidiEvent" />
+    <node concept="1TJgyi" id="cthwLbcMBD" role="1TKVEl">
+      <property role="TrG5h" value="velocity" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>

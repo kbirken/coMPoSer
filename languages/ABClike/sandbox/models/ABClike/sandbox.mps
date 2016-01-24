@@ -14,6 +14,9 @@
       </concept>
     </language>
     <language id="b4c83bfc-bf22-4ef3-9539-3d39b490a670" name="MusicBase">
+      <concept id="224412575053622033" name="MusicBase.structure.SetVelocity" flags="ng" index="18bIOt">
+        <property id="224412575053622034" name="velocity" index="18bIOu" />
+      </concept>
       <concept id="6781867810608813087" name="MusicBase.structure.NamedPlayable" flags="ng" index="3qS9N8">
         <property id="5818581779097529860" name="ticksPerBeat" index="2n5eX8" />
       </concept>
@@ -283,6 +286,9 @@
               <property role="1qPWXW" value="42" />
             </node>
           </node>
+          <node concept="18bIOt" id="cthwLbdTp6" role="3CYo5y">
+            <property role="18bIOu" value="90" />
+          </node>
           <node concept="3r7Zip" id="$8H1LjUQ0u" role="3CYo5y">
             <property role="3r6Af4" value="12" />
             <ref role="3r7Zio" node="6oHN6atr00F" resolve="MainThemeRhythm1" />
@@ -296,6 +302,9 @@
             <node concept="1qPWX1" id="$8H1LjUWdF" role="1qS8Ig">
               <property role="1qPWXW" value="40" />
             </node>
+          </node>
+          <node concept="18bIOt" id="cthwLbdTpJ" role="3CYo5y">
+            <property role="18bIOu" value="90" />
           </node>
           <node concept="3r7Zip" id="$8H1LjUWdG" role="3CYo5y">
             <property role="3r6Af4" value="24" />
@@ -530,6 +539,9 @@
           <property role="1qPWXW" value="56" />
         </node>
       </node>
+      <node concept="18bIOt" id="cthwLbdTqP" role="3CYo5y">
+        <property role="18bIOu" value="100" />
+      </node>
       <node concept="3VgZa0" id="52ZKkN7CMMe" role="3CYo5y">
         <property role="3CYorX" value="6" />
         <node concept="2nb6DH" id="52ZKkN7CMMf" role="2nb5QN">
@@ -622,6 +634,9 @@
       <property role="TrG5h" value="MainThemeB" />
       <property role="2n5eX8" value="12" />
       <property role="1qP3Hu" value="4" />
+      <node concept="18bIOt" id="cthwLbdTsm" role="3CYo5y">
+        <property role="18bIOu" value="100" />
+      </node>
       <node concept="3VgZa0" id="52ZKkN7D8ue" role="3CYo5y">
         <property role="3CYorX" value="6" />
         <node concept="2nb6F0" id="52ZKkN7D8uf" role="2nb5QN">
